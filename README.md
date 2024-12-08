@@ -59,7 +59,7 @@ Refer to the [User Manual](https://drive.google.com/file/d/1BrTWlS9N4a0xTRUzwLxw
 
 ## Design Philosophy
 
-Wilsonic MTS-ESP is designed to enable professional music production with microtonal scale designs by Erv Wilson in the DAW of your choice, where all the parameters to the scale design are automatable in the DAW.  See "daw_automated_params.txt" for the parameters that can be automated.
+Wilsonic MTS-ESP is designed to enable professional music production with microtonal scale designs by Erv Wilson in the DAW of your choice, where all the parameters to the scale design are automatable in the DAW.  See [parameters](./daw_automated_params.txt) for a list ofthe parameters that can be automated.
 
 The source of truth for all state is therefore JUCE's AudioProcessorValueTreeState.  The Processor owns the APVTS and all Models.  The Model objects own the Tuning objects, and bind them to APVTS, and provide an interface for the UI objects.  The Tuning objects are responsible for generating the MTS-ESP data.  Tuning objects know how to draw themselves.  Components delegate drawing to the Model objects, which pass the drawing on to the Tuning objects.  
 

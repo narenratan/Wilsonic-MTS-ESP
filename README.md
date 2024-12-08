@@ -14,14 +14,14 @@ Wilsonic is an advanced audio plugin and standalone application for creative sou
 
 ### macOS
 
-1. Download the latest Wilsonic installer for macOS from the [releases page](https://github.com/yourusername/wilsonic/releases).
+1. Download the latest Wilsonic installer for macOS from the [releases page](https://github.com/marcus-w-hobbs/Wilsonic-MTS-ESP/releases).
 2. Open the downloaded `.pkg` file and follow the installation wizard.
 3. The standalone application will be installed in your Applications folder.
 4. Audio Unit (AU) and VST3 plugins will be installed in their respective system folders.
 
 ### Windows
 
-1. Download the latest Wilsonic installer for Windows from the [releases page](https://github.com/yourusername/wilsonic/releases).
+1. Download the latest Wilsonic installer for Windows from the [releases page](https://github.com/marcus-w-hobbs/Wilsonic-MTS-ESP/releases).
 2. Run the downloaded `.exe` file and follow the installation wizard.
 3. The standalone application will be installed in the specified location (default: Program Files).
 4. VST3 plugins will be installed in the system VST3 folder.

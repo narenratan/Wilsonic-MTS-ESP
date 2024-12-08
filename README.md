@@ -55,7 +55,7 @@ Wilsonic is an advanced audio plugin and standalone application for creative sou
 
 ## Usage
 
-Refer to the [User Manual](docs/user_manual.md) for detailed instructions on how to use Wilsonic.
+Refer to the [User Manual](https://drive.google.com/file/d/1BrTWlS9N4a0xTRUzwLxwr5R5JJ2RvF8n) for detailed instructions on how to use Wilsonic.
 
 ## Design Philosophy
 
@@ -80,4 +80,4 @@ Wilsonic is released under the [MIT License](LICENSE).
 
 ## Contact
 
-For support or inquiries, please [open an issue](https://github.com/yourusername/wilsonic/issues) on this repository or contact us at support@wilsonic.co.
+For support or inquiries, please [open an issue](https://github.com/marcus-w-hobbs/Wilsonic-MTS-ESP/issues) on this repository.

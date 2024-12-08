@@ -1,0 +1,13 @@
+void _createViewModelConstructorMap_0000();
+void _createViewModelConstructorMap_0001();
+void _createViewModelConstructorMap_0002();
+void _createViewModelConstructorMap_0003();
+void _createViewModelConstructorMap_0004();
+void _createViewModelConstructorMap_0005();
+void _createViewModelConstructorMap_0006();
+void _createViewModelConstructorMap_0007();
+void _createViewModelConstructorMap_0008();
+void _createViewModelConstructorMap_0009();
+void _createViewModelConstructorMap_0010();
+void _createViewModelConstructorMap_0011();
+void _createViewModelConstructorMap_0012();

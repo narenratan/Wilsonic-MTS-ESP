@@ -1,0 +1,2 @@
+void _createTuningConstructorMap_0000();
+void _createTuningConstructorMap_0001();

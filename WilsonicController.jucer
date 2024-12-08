@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="adMulJ" name="WilsonicController" projectType="audioplug"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="1" jucerFormatVersion="1"
+              pluginCharacteristicsValue="pluginIsMidiEffectPlugin,pluginProducesMidiOut,pluginWantsMidiIn"
+              companyName="Perfect Buzz Music" companyCopyright="Perfect Buzz Music"
+              displaySplashScreen="0" pluginCode="Wlsc" pluginManufacturerCode="Mrcs"
+              pluginFormats="buildAU,buildStandalone,buildVST3" companyEmail="marcus.w.hobbs@gmail.com"
+              pluginManufacturer="MarcusSatellite" version="0.44.0" headerPath="../..&#10;../../Source&#10;../../Source/MTS-ESP"
+              companyWebsite="https://wilsonic.co" pluginAUMainType="'aumi'"
+              pluginAUIsSandboxSafe="1" pluginVST3Category="Instrument">
+  <MAINGROUP id="Mgz5qM" name="WilsonicController">
+    <GROUP id="{E66936A1-C7CE-2B7D-BB51-05DF0B084253}" name="Source">
+      <FILE id="cvEfZJ" name="version.h" compile="0" resource="0" file="version.h"/>
+      <FILE id="hiWE9c" name="AppVersion.h" compile="0" resource="0" file="Source/AppVersion.h"/>
+      <GROUP id="{531AE83E-8FD5-980F-A59D-2CAD7F6907DE}" name="Processor">
+        <GROUP id="{2172983F-DA31-8A37-F100-F2C98FBCCFBC}" name="Tuning">
+          <FILE id="DAZa6X" name="Tuning_Include.h" compile="0" resource="0"
+                file="Source/Tuning_Include.h"/>
+          <FILE id="DtER5e" name="TuningConstants.h" compile="0" resource="0"
+                file="Source/TuningConstants.h"/>
+          <FILE id="XrP3iq" name="TuningTable.h" compile="0" resource="0" file="Source/TuningTable.h"/>
+          <FILE id="t1sZbr" name="TuningTableImp.h" compile="0" resource="0"
+                file="Source/TuningTableImp.h"/>
+          <FILE id="DE58Iz" name="TuningTableImp.cpp" compile="1" resource="0"
+                file="Source/TuningTableImp.cpp"/>
+          <FILE id="Rhhwns" name="Tuning.h" compile="0" resource="0" file="Source/Tuning.h"/>
+          <FILE id="Pl2Dyl" name="TuningImp.h" compile="0" resource="0" file="Source/TuningImp.h"/>
+          <FILE id="hBCfIR" name="TuningImp.cpp" compile="1" resource="0" file="Source/TuningImp.cpp"/>
+          <FILE id="WESUyz" name="PythagoreanMeans.h" compile="0" resource="0"
+                file="Source/PythagoreanMeans.h"/>
+          <FILE id="hiO3An" name="PythagoreanMeans.cpp" compile="1" resource="0"
+                file="Source/PythagoreanMeans.cpp"/>
+          <FILE id="xGJ2Nq" name="Microtone.h" compile="0" resource="0" file="Source/Microtone.h"/>
+          <FILE id="LTvSME" name="Microtone.cpp" compile="1" resource="0" file="Source/Microtone.cpp"/>
+          <FILE id="lPQrma" name="MicrotoneArray.h" compile="0" resource="0"
+                file="Source/MicrotoneArray.h"/>
+          <FILE id="VZ39yO" name="MicrotoneArray.cpp" compile="1" resource="0"
+                file="Source/MicrotoneArray.cpp"/>
+          <FILE id="eSVsaN" name="Fraction.h" compile="0" resource="0" file="Source/Fraction.h"/>
+          <FILE id="o4n7yi" name="Fraction.cpp" compile="1" resource="0" file="Source/Fraction.cpp"/>
+        </GROUP>
+        <FILE id="RXQZGt" name="AppExperiments.h" compile="0" resource="0"
+              file="Source/AppExperiments.h"/>
+        <FILE id="BCRtEe" name="WilsonicProcessorConstants.h" compile="0" resource="0"
+              file="Source/WilsonicProcessorConstants.h"/>
+        <FILE id="Q84SFQ" name="WilsonicProcessor.h" compile="0" resource="0"
+              file="Source/WilsonicProcessor.h"/>
+        <FILE id="m6HOKF" name="WilsonicProcessor.cpp" compile="1" resource="0"
+              file="Source/WilsonicProcessor.cpp"/>
+        <FILE id="e5sbX1" name="WilsonicProcessor+Params.cpp" compile="1" resource="0"
+              file="Source/WilsonicProcessor+Params.cpp"/>
+        <FILE id="wnWTlP" name="WilsonicProcessor+Params+Synth.cpp" compile="1"
+              resource="0" file="Source/WilsonicProcessor+Params+Synth.cpp"/>
+        <FILE id="tX8x4w" name="WilsonicProcessor+Properties.cpp" compile="1"
+              resource="0" file="Source/WilsonicProcessor+Properties.cpp"/>
+        <FILE id="SE9bU8" name="AppTuningModel.h" compile="0" resource="0"
+              file="Source/AppTuningModel.h"/>
+        <FILE id="kpEGyP" name="AppTuningModel.cpp" compile="1" resource="0"
+              file="Source/AppTuningModel.cpp"/>
+        <FILE id="UJy6Ds" name="Columns.h" compile="0" resource="0" file="Source/Columns.h"/>
+        <FILE id="z5G8xR" name="DesignsProtocol.h" compile="0" resource="0"
+              file="Source/DesignsProtocol.h"/>
+        <FILE id="PWwqkP" name="DesignsModel.h" compile="0" resource="0" file="Source/DesignsModel.h"/>
+        <FILE id="ixN4XX" name="DesignsModel.cpp" compile="1" resource="0"
+              file="Source/DesignsModel.cpp"/>
+        <FILE id="M4D7Fe" name="ModelBase.h" compile="0" resource="0" file="Source/ModelBase.h"/>
+        <FILE id="Fiyrty" name="ModelBase.cpp" compile="1" resource="0" file="Source/ModelBase.cpp"/>
+        <FILE id="mTmAvT" name="MorphModelBase.h" compile="0" resource="0"
+              file="Source/MorphModelBase.h"/>
+        <FILE id="LO6omZ" name="MorphModelBase.cpp" compile="1" resource="0"
+              file="Source/MorphModelBase.cpp"/>
+        <FILE id="IqhS4N" name="WilsonicMath.h" compile="0" resource="0" file="Source/WilsonicMath.h"/>
+        <FILE id="cVaAqg" name="WilsonicMath.cpp" compile="1" resource="0"
+              file="Source/WilsonicMath.cpp"/>
+        <FILE id="EhfuUp" name="ParameterListeners.h" compile="0" resource="0"
+              file="Source/ParameterListeners.h"/>
+      </GROUP>
+      <GROUP id="{78918A37-000A-55D6-3C85-4A8D4B4FBA26}" name="Editor">
+        <GROUP id="{6B9423FF-6099-9D36-6863-EDD2703E3C6D}" name="Appearance">
+          <FILE id="nbxmxW" name="WilsonicAppSkin.h" compile="0" resource="0"
+                file="Source/WilsonicAppSkin.h"/>
+          <FILE id="s8tkAT" name="WilsonicAppSkin.cpp" compile="1" resource="0"
+                file="Source/WilsonicAppSkin.cpp"/>
+          <FILE id="uwekYj" name="WilsonicLookAndFeel.h" compile="0" resource="0"
+                file="Source/WilsonicLookAndFeel.h"/>
+          <FILE id="RjiLan" name="WilsonicLookAndFeel.cpp" compile="1" resource="0"
+                file="Source/WilsonicLookAndFeel.cpp"/>
+        </GROUP>
+        <GROUP id="{BB977E42-E5A6-166D-EDC3-5D12BD74DF2F}" name="Common Components">
+          <FILE id="dV2D8w" name="Assets.h" compile="0" resource="0" file="Source/Assets.h"/>
+          <FILE id="P6oAyK" name="Assets.cpp" compile="1" resource="0" file="Source/Assets.cpp"/>
+          <FILE id="qmaxXg" name="BubbleDrawable.h" compile="0" resource="0"
+                file="Source/BubbleDrawable.h"/>
+          <FILE id="VoXkFR" name="BubbleDrawable.cpp" compile="1" resource="0"
+                file="Source/BubbleDrawable.cpp"/>
+          <FILE id="nWgNTn" name="DeltaComboBox.h" compile="0" resource="0" file="Source/DeltaComboBox.h"/>
+          <FILE id="wg7bqT" name="DeltaComboBox.cpp" compile="1" resource="0"
+                file="Source/DeltaComboBox.cpp"/>
+          <FILE id="LnCy9M" name="DeltaSlider.h" compile="0" resource="0" file="Source/DeltaSlider.h"/>
+          <FILE id="s7LsUk" name="DeltaSlider.cpp" compile="1" resource="0" file="Source/DeltaSlider.cpp"/>
+          <FILE id="YqvKXO" name="Rhombus.h" compile="0" resource="0" file="Source/Rhombus.h"/>
+          <FILE id="hldLSM" name="Rhombus.cpp" compile="1" resource="0" file="Source/Rhombus.cpp"/>
+          <FILE id="HAAlwY" name="SeedSlider.h" compile="0" resource="0" file="Source/SeedSlider.h"/>
+          <FILE id="KYIBo1" name="SeedSlider.cpp" compile="1" resource="0" file="Source/SeedSlider.cpp"/>
+          <FILE id="lYYn9E" name="SeedSliderComponent.h" compile="0" resource="0"
+                file="Source/SeedSliderComponent.h"/>
+          <FILE id="y3PUj3" name="SeedSliderComponent.cpp" compile="1" resource="0"
+                file="Source/SeedSliderComponent.cpp"/>
+          <FILE id="ov7etZ" name="TuningRendererComponent.h" compile="0" resource="0"
+                file="Source/TuningRendererComponent.h"/>
+          <FILE id="PXFLYg" name="TuningRendererComponent.cpp" compile="1" resource="0"
+                file="Source/TuningRendererComponent.cpp"/>
+          <FILE id="FwBSQf" name="WilsonicIntervalMatrixComponent.h" compile="0"
+                resource="0" file="Source/WilsonicIntervalMatrixComponent.h"/>
+          <FILE id="QtjCE5" name="WilsonicIntervalMatrixComponent.cpp" compile="1"
+                resource="0" file="Source/WilsonicIntervalMatrixComponent.cpp"/>
+          <FILE id="GBidDO" name="WilsonicPitchWheelComponent.h" compile="0"
+                resource="0" file="Source/WilsonicPitchWheelComponent.h"/>
+          <FILE id="fXNIr6" name="WilsonicPitchWheelComponent.cpp" compile="1"
+                resource="0" file="Source/WilsonicPitchWheelComponent.cpp"/>
+        </GROUP>
+        <FILE id="KN3eGs" name="ok_color.h" compile="0" resource="0" file="Source/ok_color.h"/>
+        <FILE id="DtkZ0O" name="WilsonicEditor.h" compile="0" resource="0"
+              file="Source/WilsonicEditor.h"/>
+        <FILE id="tH3Knx" name="WilsonicEditor.cpp" compile="1" resource="0"
+              file="Source/WilsonicEditor.cpp"/>
+        <FILE id="XswEUZ" name="AppRootComponent.h" compile="0" resource="0"
+              file="Source/AppRootComponent.h"/>
+        <FILE id="xsR291" name="AppRootComponent.cpp" compile="1" resource="0"
+              file="Source/AppRootComponent.cpp"/>
+        <GROUP id="{18F2A6B6-DC68-049A-F6CB-6B196AE1F7F8}" name="Keyboard Container">
+          <FILE id="Rd6Aut" name="DeltaBroadcaster.h" compile="0" resource="0"
+                file="Source/DeltaBroadcaster.h"/>
+          <FILE id="Imv4XZ" name="DeltaBroadcaster.cpp" compile="1" resource="0"
+                file="Source/DeltaBroadcaster.cpp"/>
+          <FILE id="xJeIRl" name="DeltaListener.h" compile="0" resource="0" file="Source/DeltaListener.h"/>
+          <FILE id="MCNfkZ" name="DeltaListener.cpp" compile="1" resource="0"
+                file="Source/DeltaListener.cpp"/>
+          <GROUP id="{AE0F8517-C85E-46E0-3189-34E9DE8D9AC2}" name="MIDIOutput">
+            <FILE id="S8PDX2" name="MIDIOutputRowComponent.h" compile="0" resource="0"
+                  file="Source/MIDIOutputRowComponent.h"/>
+            <FILE id="pM1NBI" name="MIDIOutputRowComponent.cpp" compile="1" resource="0"
+                  file="Source/MIDIOutputRowComponent.cpp"/>
+            <FILE id="k9xahO" name="WilsonicMIDIOutputComponent.h" compile="0"
+                  resource="0" file="Source/WilsonicMIDIOutputComponent.h"/>
+            <FILE id="sTl444" name="WilsonicMIDIOutputComponent.cpp" compile="1"
+                  resource="0" file="Source/WilsonicMIDIOutputComponent.cpp"/>
+          </GROUP>
+          <FILE id="AgMVmB" name="WilsonicKeyboardContainerComponent.h" compile="0"
+                resource="0" file="Source/WilsonicKeyboardContainerComponent.h"/>
+          <FILE id="VPggoD" name="WilsonicKeyboardContainerComponent.cpp" compile="1"
+                resource="0" file="Source/WilsonicKeyboardContainerComponent.cpp"/>
+        </GROUP>
+        <FILE id="muVexF" name="WilsonicMidiKeyboardComponent.h" compile="0"
+              resource="0" file="Source/WilsonicMidiKeyboardComponent.h"/>
+        <FILE id="zp67Rs" name="WilsonicMidiKeyboardComponent.cpp" compile="1"
+              resource="0" file="Source/WilsonicMidiKeyboardComponent.cpp"/>
+        <FILE id="dhDWqA" name="WilsonicMidiKeyboardComponent+paint.cpp" compile="1"
+              resource="0" file="Source/WilsonicMidiKeyboardComponent+paint.cpp"/>
+        <FILE id="BIT4Xh" name="WilsonicRootComponent.h" compile="0" resource="0"
+              file="Source/WilsonicRootComponent.h"/>
+        <FILE id="zxG3Iq" name="WilsonicRootComponent.cpp" compile="1" resource="0"
+              file="Source/WilsonicRootComponent.cpp"/>
+        <GROUP id="{63CA52E5-6FB6-4DDE-BACD-E71167EBB49A}" name="WilsonicMenuComponent">
+          <FILE id="Oe6KiD" name="WilsonicMenuComponent.h" compile="0" resource="0"
+                file="Source/WilsonicMenuComponent.h"/>
+          <FILE id="l0WFOa" name="WilsonicMenuComponent.cpp" compile="1" resource="0"
+                file="Source/WilsonicMenuComponent.cpp"/>
+          <FILE id="gxDtOK" name="WilsonicMenuComponentMessageBus.h" compile="0"
+                resource="0" file="Source/WilsonicMenuComponentMessageBus.h"/>
+          <FILE id="wlxF7u" name="WilsonicMenuComponentMessageBus.cpp" compile="1"
+                resource="0" file="Source/WilsonicMenuComponentMessageBus.cpp"/>
+        </GROUP>
+        <FILE id="MD9Neb" name="WilsonicTuningContainer.h" compile="0" resource="0"
+              file="Source/WilsonicTuningContainer.h"/>
+        <FILE id="AtYv79" name="WilsonicTuningContainer.cpp" compile="1" resource="0"
+              file="Source/WilsonicTuningContainer.cpp"/>
+        <FILE id="N6XNqH" name="WilsonicComponentBase.h" compile="0" resource="0"
+              file="Source/WilsonicComponentBase.h"/>
+        <FILE id="tLh0CA" name="WilsonicComponentBase.cpp" compile="1" resource="0"
+              file="Source/WilsonicComponentBase.cpp"/>
+        <FILE id="HJvKu8" name="WilsonicAppTuningComponent.h" compile="0" resource="0"
+              file="Source/WilsonicAppTuningComponent.h"/>
+        <FILE id="LhGfuo" name="WilsonicAppTuningComponent.cpp" compile="1"
+              resource="0" file="Source/WilsonicAppTuningComponent.cpp"/>
+      </GROUP>
+      <GROUP id="{B2903D28-8DD8-09B6-604E-95445EF5E989}" name="Brun">
+        <GROUP id="{318A9353-56E9-E72E-607B-B5484BA36283}" name="Tuning">
+          <FILE id="vuyyop" name="Brun.h" compile="0" resource="0" file="Source/Brun.h"/>
+          <FILE id="hUi6A0" name="Brun.cpp" compile="1" resource="0" file="Source/Brun.cpp"/>
+          <FILE id="p4glTx" name="Brun+Paint.cpp" compile="1" resource="0" file="Source/Brun+Paint.cpp"/>
+          <FILE id="sfcLlk" name="Brun+Tuning.cpp" compile="1" resource="0" file="Source/Brun+Tuning.cpp"/>
+          <FILE id="c8gvS7" name="Brun+Gral.cpp" compile="1" resource="0" file="Source/Brun+Gral.cpp"/>
+          <FILE id="uz2rtL" name="BrunMicrotone.h" compile="0" resource="0" file="Source/BrunMicrotone.h"/>
+          <FILE id="QuZKJ0" name="BrunMicrotone.cpp" compile="1" resource="0"
+                file="Source/BrunMicrotone.cpp"/>
+        </GROUP>
+        <GROUP id="{D2C94780-5E3A-7450-277B-EB6BBDF12B2E}" name="Model">
+          <FILE id="gT4FdT" name="Brun2Model.h" compile="0" resource="0" file="Source/Brun2Model.h"/>
+          <FILE id="oIyedn" name="Brun2Model.cpp" compile="1" resource="0" file="Source/Brun2Model.cpp"/>
+          <FILE id="o2d4EX" name="Brun2MorphModel.h" compile="0" resource="0"
+                file="Source/Brun2MorphModel.h"/>
+          <FILE id="Yde6eu" name="Brun2MorphModel.cpp" compile="1" resource="0"
+                file="Source/Brun2MorphModel.cpp"/>
+        </GROUP>
+        <GROUP id="{6CD51BB2-2C53-79D0-D638-5FFE99010792}" name="Component">
+          <FILE id="CctHMv" name="BrunRootComponent.h" compile="0" resource="0"
+                file="Source/BrunRootComponent.h"/>
+          <FILE id="hNYiWp" name="BrunRootComponent.cpp" compile="1" resource="0"
+                file="Source/BrunRootComponent.cpp"/>
+          <FILE id="TBGPeX" name="BrunGraphComponent.h" compile="0" resource="0"
+                file="Source/BrunGraphComponent.h"/>
+          <FILE id="h0J9iI" name="BrunGraphComponent.cpp" compile="1" resource="0"
+                file="Source/BrunGraphComponent.cpp"/>
+          <FILE id="dSDAIq" name="BrunLevelComponent.h" compile="0" resource="0"
+                file="Source/BrunLevelComponent.h"/>
+          <FILE id="bgHdML" name="BrunLevelComponent.cpp" compile="1" resource="0"
+                file="Source/BrunLevelComponent.cpp"/>
+          <FILE id="FpsOGE" name="BrunPitchWheel.h" compile="0" resource="0"
+                file="Source/BrunPitchWheel.h"/>
+          <FILE id="oN7ec2" name="BrunPitchWheel.cpp" compile="1" resource="0"
+                file="Source/BrunPitchWheel.cpp"/>
+          <FILE id="vYS1zg" name="BrunIntervalMatrix.h" compile="0" resource="0"
+                file="Source/BrunIntervalMatrix.h"/>
+          <FILE id="BvjhxQ" name="BrunIntervalMatrix.cpp" compile="1" resource="0"
+                file="Source/BrunIntervalMatrix.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{3071197C-A616-05FF-16D4-EF512FCA4E65}" name="CoPrimeGrid">
+        <GROUP id="{E6336551-E1FC-62FD-3A49-253897869DE5}" name="Tuning">
+          <FILE id="wqlQYQ" name="CoPrime.h" compile="0" resource="0" file="Source/CoPrime.h"/>
+          <FILE id="BwKJ7H" name="CoPrime.cpp" compile="1" resource="0" file="Source/CoPrime.cpp"/>
+          <FILE id="b9sBvv" name="CoPrimeMicrotone.h" compile="0" resource="0"
+                file="Source/CoPrimeMicrotone.h"/>
+          <FILE id="njV16Q" name="CoPrimeMicrotone.cpp" compile="1" resource="0"
+                file="Source/CoPrimeMicrotone.cpp"/>
+        </GROUP>
+        <GROUP id="{08E0BECC-780C-7924-6387-921B7472EA96}" name="Model">
+          <FILE id="bC9aqb" name="CoPrimeModel.h" compile="0" resource="0" file="Source/CoPrimeModel.h"/>
+          <FILE id="BORHud" name="CoPrimeModel.cpp" compile="1" resource="0"
+                file="Source/CoPrimeModel.cpp"/>
+          <FILE id="OE3gf9" name="CoPrimeMorphModel.h" compile="0" resource="0"
+                file="Source/CoPrimeMorphModel.h"/>
+          <FILE id="gY97c5" name="CoPrimeMorphModel.cpp" compile="1" resource="0"
+                file="Source/CoPrimeMorphModel.cpp"/>
+        </GROUP>
+        <GROUP id="{79CE58BA-4E1F-C004-ACA9-AA833CBB24D6}" name="Component">
+          <FILE id="ZuWP2G" name="CoPrimeComponent.h" compile="0" resource="0"
+                file="Source/CoPrimeComponent.h"/>
+          <FILE id="jEscCE" name="CoPrimeComponent.cpp" compile="1" resource="0"
+                file="Source/CoPrimeComponent.cpp"/>
+          <FILE id="L0iQaI" name="CoPrimeGridComponent.h" compile="0" resource="0"
+                file="Source/CoPrimeGridComponent.h"/>
+          <FILE id="bGInKk" name="CoPrimeGridComponent.cpp" compile="1" resource="0"
+                file="Source/CoPrimeGridComponent.cpp"/>
+          <FILE id="UzJF7o" name="CoPrimeGridOverlayComponent.h" compile="0"
+                resource="0" file="Source/CoPrimeGridOverlayComponent.h"/>
+          <FILE id="AWc88r" name="CoPrimeGridOverlayComponent.cpp" compile="1"
+                resource="0" file="Source/CoPrimeGridOverlayComponent.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{27580234-0E99-17B8-3B5C-BD4B7183BD05}" name="CPS">
+        <GROUP id="{F086B86B-F96C-D16F-F20C-0B52BC9CEC74}" name="Tuning">
+          <FILE id="Eb6AXI" name="CPS.h" compile="0" resource="0" file="Source/CPS.h"/>
+          <FILE id="bcnsX3" name="CPS.cpp" compile="1" resource="0" file="Source/CPS.cpp"/>
+          <FILE id="qx7HQV" name="CPSMicrotone.h" compile="0" resource="0" file="Source/CPSMicrotone.h"/>
+          <FILE id="xWXq1e" name="CPSMicrotone.cpp" compile="1" resource="0"
+                file="Source/CPSMicrotone.cpp"/>
+          <FILE id="LNkG3I" name="CPSTuningBase.h" compile="0" resource="0" file="Source/CPSTuningBase.h"/>
+          <FILE id="kLoWSw" name="CPSTuningBase.cpp" compile="1" resource="0"
+                file="Source/CPSTuningBase.cpp"/>
+          <FILE id="owmAWi" name="CPSTuningBase+paint.cpp" compile="1" resource="0"
+                file="Source/CPSTuningBase+paint.cpp"/>
+          <FILE id="jQEaMT" name="Seed1.h" compile="0" resource="0" file="Source/Seed1.h"/>
+          <FILE id="LK4HGl" name="Seed1.cpp" compile="1" resource="0" file="Source/Seed1.cpp"/>
+          <FILE id="uHZJYd" name="Seed2.h" compile="0" resource="0" file="Source/Seed2.h"/>
+          <FILE id="H1WICW" name="Seed2.cpp" compile="1" resource="0" file="Source/Seed2.cpp"/>
+          <FILE id="IWYppl" name="Seed3.h" compile="0" resource="0" file="Source/Seed3.h"/>
+          <FILE id="gLqm0g" name="Seed3.cpp" compile="1" resource="0" file="Source/Seed3.cpp"/>
+          <FILE id="Ky5gES" name="Seed4.h" compile="0" resource="0" file="Source/Seed4.h"/>
+          <FILE id="MT0drh" name="Seed4.cpp" compile="1" resource="0" file="Source/Seed4.cpp"/>
+          <FILE id="WLjQRs" name="Seed5.h" compile="0" resource="0" file="Source/Seed5.h"/>
+          <FILE id="MgJ9qU" name="Seed5.cpp" compile="1" resource="0" file="Source/Seed5.cpp"/>
+          <FILE id="gpxn02" name="Seed6.h" compile="0" resource="0" file="Source/Seed6.h"/>
+          <FILE id="KD4lDP" name="Seed6.cpp" compile="1" resource="0" file="Source/Seed6.cpp"/>
+          <FILE id="OpVgof" name="Seed7.h" compile="0" resource="0" file="Source/Seed7.h"/>
+          <FILE id="AJ5CjM" name="Seed7.cpp" compile="1" resource="0" file="Source/Seed7.cpp"/>
+          <FILE id="w8edJL" name="Seed8.h" compile="0" resource="0" file="Source/Seed8.h"/>
+          <FILE id="Keagjt" name="Seed8.cpp" compile="1" resource="0" file="Source/Seed8.cpp"/>
+          <FILE id="W32mj5" name="CPS_1_1.h" compile="0" resource="0" file="Source/CPS_1_1.h"/>
+          <FILE id="TlETpE" name="CPS_1_1.cpp" compile="1" resource="0" file="Source/CPS_1_1.cpp"/>
+          <FILE id="ildnZf" name="CPS_2_1.h" compile="0" resource="0" file="Source/CPS_2_1.h"/>
+          <FILE id="tdEmsc" name="CPS_2_1.cpp" compile="1" resource="0" file="Source/CPS_2_1.cpp"/>
+          <FILE id="ndVBOp" name="CPS_2_2.h" compile="0" resource="0" file="Source/CPS_2_2.h"/>
+          <FILE id="diR6Bp" name="CPS_2_2.cpp" compile="1" resource="0" file="Source/CPS_2_2.cpp"/>
+          <FILE id="A99J4W" name="CPS_3_1.h" compile="0" resource="0" file="Source/CPS_3_1.h"/>
+          <FILE id="p7Ld9b" name="CPS_3_1.cpp" compile="1" resource="0" file="Source/CPS_3_1.cpp"/>
+          <FILE id="AYEF30" name="CPS_3_2.h" compile="0" resource="0" file="Source/CPS_3_2.h"/>
+          <FILE id="FpTEHE" name="CPS_3_2.cpp" compile="1" resource="0" file="Source/CPS_3_2.cpp"/>
+          <FILE id="HCEEZt" name="CPS_3_3.h" compile="0" resource="0" file="Source/CPS_3_3.h"/>
+          <FILE id="IbGhOF" name="CPS_3_3.cpp" compile="1" resource="0" file="Source/CPS_3_3.cpp"/>
+          <FILE id="PaFipd" name="CPS_4_1.h" compile="0" resource="0" file="Source/CPS_4_1.h"/>
+          <FILE id="HeOrl6" name="CPS_4_1.cpp" compile="1" resource="0" file="Source/CPS_4_1.cpp"/>
+          <FILE id="NeaA5u" name="CPS_4_2.h" compile="0" resource="0" file="Source/CPS_4_2.h"/>
+          <FILE id="UoQZ0Y" name="CPS_4_2.cpp" compile="1" resource="0" file="Source/CPS_4_2.cpp"/>
+          <FILE id="jwaEuV" name="Mandala.h" compile="0" resource="0" file="Source/Mandala.h"/>
+          <FILE id="Nd02hb" name="Mandala.cpp" compile="1" resource="0" file="Source/Mandala.cpp"/>
+          <FILE id="DmmtXd" name="CPS_4_3.h" compile="0" resource="0" file="Source/CPS_4_3.h"/>
+          <FILE id="Qwf7SK" name="CPS_4_3.cpp" compile="1" resource="0" file="Source/CPS_4_3.cpp"/>
+          <FILE id="Owp0wx" name="CPS_4_4.h" compile="0" resource="0" file="Source/CPS_4_4.h"/>
+          <FILE id="t8x8YH" name="CPS_4_4.cpp" compile="1" resource="0" file="Source/CPS_4_4.cpp"/>
+          <FILE id="d4wG9b" name="CPS_5_1.h" compile="0" resource="0" file="Source/CPS_5_1.h"/>
+          <FILE id="nZil2x" name="CPS_5_1.cpp" compile="1" resource="0" file="Source/CPS_5_1.cpp"/>
+          <FILE id="pgwJuT" name="CPS_5_2.h" compile="0" resource="0" file="Source/CPS_5_2.h"/>
+          <FILE id="paqsRe" name="CPS_5_2.cpp" compile="1" resource="0" file="Source/CPS_5_2.cpp"/>
+          <FILE id="E768m6" name="CPS_5_3.h" compile="0" resource="0" file="Source/CPS_5_3.h"/>
+          <FILE id="VSLiNp" name="CPS_5_3.cpp" compile="1" resource="0" file="Source/CPS_5_3.cpp"/>
+          <FILE id="D48mMi" name="CPS_5_4.h" compile="0" resource="0" file="Source/CPS_5_4.h"/>
+          <FILE id="hlxw5r" name="CPS_5_4.cpp" compile="1" resource="0" file="Source/CPS_5_4.cpp"/>
+          <FILE id="YOvTSt" name="CPS_5_5.h" compile="0" resource="0" file="Source/CPS_5_5.h"/>
+          <FILE id="NMn9hT" name="CPS_5_5.cpp" compile="1" resource="0" file="Source/CPS_5_5.cpp"/>
+          <FILE id="k3Gb86" name="CPS_6_1.h" compile="0" resource="0" file="Source/CPS_6_1.h"/>
+          <FILE id="OQeVWO" name="CPS_6_1.cpp" compile="1" resource="0" file="Source/CPS_6_1.cpp"/>
+          <FILE id="BCv2zZ" name="CPS_6_2.h" compile="0" resource="0" file="Source/CPS_6_2.h"/>
+          <FILE id="czUJer" name="CPS_6_2.cpp" compile="1" resource="0" file="Source/CPS_6_2.cpp"/>
+          <FILE id="Am9OHF" name="CPS_6_3.h" compile="0" resource="0" file="Source/CPS_6_3.h"/>
+          <FILE id="VjEdMX" name="CPS_6_3.cpp" compile="1" resource="0" file="Source/CPS_6_3.cpp"/>
+          <FILE id="nkqbZT" name="CPS_6_4.h" compile="0" resource="0" file="Source/CPS_6_4.h"/>
+          <FILE id="QbUn51" name="CPS_6_4.cpp" compile="1" resource="0" file="Source/CPS_6_4.cpp"/>
+          <FILE id="ixPvci" name="CPS_6_5.h" compile="0" resource="0" file="Source/CPS_6_5.h"/>
+          <FILE id="mHVSQD" name="CPS_6_5.cpp" compile="1" resource="0" file="Source/CPS_6_5.cpp"/>
+          <FILE id="LB1kxC" name="CPS_6_6.h" compile="0" resource="0" file="Source/CPS_6_6.h"/>
+          <FILE id="JsQnyF" name="CPS_6_6.cpp" compile="1" resource="0" file="Source/CPS_6_6.cpp"/>
+          <FILE id="EGso7f" name="CPS_7_1.h" compile="0" resource="0" file="Source/CPS_7_1.h"/>
+          <FILE id="tWqchz" name="CPS_7_1.cpp" compile="1" resource="0" file="Source/CPS_7_1.cpp"/>
+          <FILE id="uF8bAe" name="CPS_8_1.h" compile="0" resource="0" file="Source/CPS_8_1.h"/>
+          <FILE id="A7Yazr" name="CPS_8_1.cpp" compile="1" resource="0" file="Source/CPS_8_1.cpp"/>
+        </GROUP>
+        <GROUP id="{5D71E16E-7E63-2E95-AEBB-095D4A5265DA}" name="Model">
+          <FILE id="hd4u3c" name="CPSModel.h" compile="0" resource="0" file="Source/CPSModel.h"/>
+          <FILE id="GiP5JO" name="CPSModel.cpp" compile="1" resource="0" file="Source/CPSModel.cpp"/>
+          <FILE id="xxly1K" name="CPSMorphModel.h" compile="0" resource="0" file="Source/CPSMorphModel.h"/>
+          <FILE id="BE6nNT" name="CPSMorphModel.cpp" compile="1" resource="0"
+                file="Source/CPSMorphModel.cpp"/>
+        </GROUP>
+        <GROUP id="{5D59F9D8-09A7-729E-397D-8D659988B89E}" name="Component">
+          <FILE id="UcILSv" name="CPSRootComponentV2.h" compile="0" resource="0"
+                file="Source/CPSRootComponentV2.h"/>
+          <FILE id="PRHHU8" name="CPSRootComponentV2.cpp" compile="1" resource="0"
+                file="Source/CPSRootComponentV2.cpp"/>
+          <FILE id="gbiIrp" name="CPSElementComponentV2.h" compile="0" resource="0"
+                file="Source/CPSElementComponentV2.h"/>
+          <FILE id="HVOuXg" name="CPSElementComponentV2.cpp" compile="1" resource="0"
+                file="Source/CPSElementComponentV2.cpp"/>
+        </GROUP>
+        <GROUP id="{78DC62CA-E8BF-FFDD-D809-43048FB6C5CC}" name="deprecated">
+          <FILE id="qocf4O" name="CPSRootComponent.h" compile="0" resource="0"
+                file="Source/CPSRootComponent.h"/>
+          <FILE id="rcVRYC" name="CPSRootComponent.cpp" compile="1" resource="0"
+                file="Source/CPSRootComponent.cpp"/>
+          <FILE id="vQbkOQ" name="CPSElementComponent.h" compile="0" resource="0"
+                file="Source/CPSElementComponent.h"/>
+          <FILE id="t6SJSF" name="CPSElementComponent.cpp" compile="1" resource="0"
+                file="Source/CPSElementComponent.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{1BA2E97B-AF33-709E-51B7-3036BA12006B}" name="Diamonds">
+        <GROUP id="{A9A080B0-67F6-E6B5-7AE2-2CF4D560D114}" name="Tuning">
+          <FILE id="N2Axnx" name="Diamonds.h" compile="0" resource="0" file="Source/Diamonds.h"/>
+          <FILE id="bbjEqC" name="Diamonds.cpp" compile="1" resource="0" file="Source/Diamonds.cpp"/>
+          <FILE id="nKComE" name="TriadicDiamond.h" compile="0" resource="0"
+                file="Source/TriadicDiamond.h"/>
+          <FILE id="uV8A4f" name="TriadicDiamond.cpp" compile="1" resource="0"
+                file="Source/TriadicDiamond.cpp"/>
+          <FILE id="YRLomk" name="Triad.h" compile="0" resource="0" file="Source/Triad.h"/>
+          <FILE id="vwWx4W" name="Triad.cpp" compile="1" resource="0" file="Source/Triad.cpp"/>
+          <FILE id="cxD9QY" name="TetradicDiamond.h" compile="0" resource="0"
+                file="Source/TetradicDiamond.h"/>
+          <FILE id="ZJhDNv" name="TetradicDiamond.cpp" compile="1" resource="0"
+                file="Source/TetradicDiamond.cpp"/>
+          <FILE id="gJi53L" name="Tetrad.h" compile="0" resource="0" file="Source/Tetrad.h"/>
+          <FILE id="yVcto4" name="Tetrad.cpp" compile="1" resource="0" file="Source/Tetrad.cpp"/>
+          <FILE id="SiMKvj" name="PentadicDiamond.h" compile="0" resource="0"
+                file="Source/PentadicDiamond.h"/>
+          <FILE id="gxk1mm" name="PentadicDiamond.cpp" compile="1" resource="0"
+                file="Source/PentadicDiamond.cpp"/>
+          <FILE id="HAKlnl" name="Pentad.h" compile="0" resource="0" file="Source/Pentad.h"/>
+          <FILE id="mvXKhn" name="Pentad.cpp" compile="1" resource="0" file="Source/Pentad.cpp"/>
+          <FILE id="x2AXHn" name="HexadicDiamond.h" compile="0" resource="0"
+                file="Source/HexadicDiamond.h"/>
+          <FILE id="HXLRcb" name="HexadicDiamond.cpp" compile="1" resource="0"
+                file="Source/HexadicDiamond.cpp"/>
+          <FILE id="iV4RaY" name="Hexad.h" compile="0" resource="0" file="Source/Hexad.h"/>
+          <FILE id="OHcGLP" name="Hexad.cpp" compile="1" resource="0" file="Source/Hexad.cpp"/>
+          <FILE id="hhQK6l" name="HeptadicDiamond.h" compile="0" resource="0"
+                file="Source/HeptadicDiamond.h"/>
+          <FILE id="HYW64K" name="HeptadicDiamond.cpp" compile="1" resource="0"
+                file="Source/HeptadicDiamond.cpp"/>
+          <FILE id="fJeaKr" name="Heptad.h" compile="0" resource="0" file="Source/Heptad.h"/>
+          <FILE id="W1wFpV" name="Heptad.cpp" compile="1" resource="0" file="Source/Heptad.cpp"/>
+          <FILE id="BWeYpt" name="OgdoadicDiamond.h" compile="0" resource="0"
+                file="Source/OgdoadicDiamond.h"/>
+          <FILE id="nhZI0O" name="OgdoadicDiamond.cpp" compile="1" resource="0"
+                file="Source/OgdoadicDiamond.cpp"/>
+          <FILE id="MPMlzY" name="Ogdoad.h" compile="0" resource="0" file="Source/Ogdoad.h"/>
+          <FILE id="U0GaYw" name="Ogdoad.cpp" compile="1" resource="0" file="Source/Ogdoad.cpp"/>
+        </GROUP>
+        <GROUP id="{3147FADA-3FD3-E86F-FE8D-1D00642B0A52}" name="Model">
+          <FILE id="YTMQIq" name="DiamondsModel.h" compile="0" resource="0" file="Source/DiamondsModel.h"/>
+          <FILE id="KPG513" name="DiamondsModel.cpp" compile="1" resource="0"
+                file="Source/DiamondsModel.cpp"/>
+          <FILE id="fS7ARd" name="DiamondsMorphModel.h" compile="0" resource="0"
+                file="Source/DiamondsMorphModel.h"/>
+          <FILE id="MPxPKW" name="DiamondsMorphModel.cpp" compile="1" resource="0"
+                file="Source/DiamondsMorphModel.cpp"/>
+        </GROUP>
+        <GROUP id="{4D32A539-1895-FF69-D96D-0FDF04F2A72D}" name="Component">
+          <FILE id="fiOaIz" name="DiamondsComponent.h" compile="0" resource="0"
+                file="Source/DiamondsComponent.h"/>
+          <FILE id="jW2Wh8" name="DiamondsComponent.cpp" compile="1" resource="0"
+                file="Source/DiamondsComponent.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{AAF1AFBA-39A1-063C-52EC-2AC0F39F4B52}" name="EqualTemperament">
+        <GROUP id="{1A6B094B-059C-8857-E277-98F35E47DC5F}" name="Tuning">
+          <FILE id="IcbL4D" name="EqualTemperament.h" compile="0" resource="0"
+                file="Source/EqualTemperament.h"/>
+          <FILE id="HVYbna" name="EqualTemperament.cpp" compile="1" resource="0"
+                file="Source/EqualTemperament.cpp"/>
+        </GROUP>
+        <GROUP id="{D02B4926-F341-7CD5-63F1-4E636662A675}" name="Model">
+          <FILE id="J9sZAm" name="EqualTemperamentModel.h" compile="0" resource="0"
+                file="Source/EqualTemperamentModel.h"/>
+          <FILE id="ouGvFZ" name="EqualTemperamentModel.cpp" compile="1" resource="0"
+                file="Source/EqualTemperamentModel.cpp"/>
+          <FILE id="uKhMuB" name="EqualTemperamentMorphModel.h" compile="0" resource="0"
+                file="Source/EqualTemperamentMorphModel.h"/>
+          <FILE id="uXKfqf" name="EqualTemperamentMorphModel.cpp" compile="1"
+                resource="0" file="Source/EqualTemperamentMorphModel.cpp"/>
+        </GROUP>
+        <GROUP id="{36EE549E-914C-911B-8707-4B265F720EBE}" name="Component">
+          <FILE id="jcJKf9" name="EqualTemperamentComponent.h" compile="0" resource="0"
+                file="Source/EqualTemperamentComponent.h"/>
+          <FILE id="JqJSE8" name="EqualTemperamentComponent.cpp" compile="1"
+                resource="0" file="Source/EqualTemperamentComponent.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{9ABF2C26-3EC2-66B3-7974-6E40DB2ABBCA}" name="EulerGenus">
+        <GROUP id="{4F3CDAF8-A688-3378-6645-FD482725E186}" name="Tuning">
+          <FILE id="aOvp11" name="EulerGenus_1.h" compile="0" resource="0" file="Source/EulerGenus_1.h"/>
+          <FILE id="r6KDSi" name="EulerGenus_1.cpp" compile="1" resource="0"
+                file="Source/EulerGenus_1.cpp"/>
+          <FILE id="Pz2mBa" name="EulerGenus_2.h" compile="0" resource="0" file="Source/EulerGenus_2.h"/>
+          <FILE id="OXwqkr" name="EulerGenus_2.cpp" compile="1" resource="0"
+                file="Source/EulerGenus_2.cpp"/>
+          <FILE id="r3GQok" name="EulerGenus_3.h" compile="0" resource="0" file="Source/EulerGenus_3.h"/>
+          <FILE id="MEs5U5" name="EulerGenus_3.cpp" compile="1" resource="0"
+                file="Source/EulerGenus_3.cpp"/>
+          <FILE id="Yzqbmh" name="EulerGenus_4.h" compile="0" resource="0" file="Source/EulerGenus_4.h"/>
+          <FILE id="ViMKsf" name="EulerGenus_4.cpp" compile="1" resource="0"
+                file="Source/EulerGenus_4.cpp"/>
+          <FILE id="LgMsYh" name="EulerGenus_5.h" compile="0" resource="0" file="Source/EulerGenus_5.h"/>
+          <FILE id="HJOOBO" name="EulerGenus_5.cpp" compile="1" resource="0"
+                file="Source/EulerGenus_5.cpp"/>
+          <FILE id="ZWbB7m" name="EulerGenus_6.h" compile="0" resource="0" file="Source/EulerGenus_6.h"/>
+          <FILE id="bHu5jA" name="EulerGenus_6.cpp" compile="1" resource="0"
+                file="Source/EulerGenus_6.cpp"/>
+        </GROUP>
+        <GROUP id="{21882ED9-0DED-877E-D203-3579DA302432}" name="Model">
+          <FILE id="bcvYKm" name="EulerGenusModelTypes.h" compile="0" resource="0"
+                file="Source/EulerGenusModelTypes.h"/>
+          <FILE id="d9laWZ" name="EulerGenusModel.h" compile="0" resource="0"
+                file="Source/EulerGenusModel.h"/>
+          <FILE id="lzWlJY" name="EulerGenusModel.cpp" compile="1" resource="0"
+                file="Source/EulerGenusModel.cpp"/>
+          <FILE id="HJkSXB" name="EulerGenusModel+Params.cpp" compile="1" resource="0"
+                file="Source/EulerGenusModel+Params.cpp"/>
+          <FILE id="Apbbd4" name="EulerGenusModel+_createDAWKeys.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModel+_createDAWKeys.cpp"/>
+          <FILE id="HbPow0" name="EulerGenusModel+_createTuningConstructorMap.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModel+_createTuningConstructorMap.cpp"/>
+          <FILE id="TpWhJc" name="EulerGenusModel+_createTuningSelectionMap.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModel+_createTuningSelectionMap.cpp"/>
+          <FILE id="uG2UAV" name="EulerGenusModel+_createTuningUpdateMap.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModel+_createTuningUpdateMap.cpp"/>
+          <FILE id="kcux24" name="EulerGenusModel+_createViewModelConstructorMap.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModel+_createViewModelConstructorMap.cpp"/>
+          <FILE id="wJ5tOV" name="EulerGenusMorphModel.h" compile="0" resource="0"
+                file="Source/EulerGenusMorphModel.h"/>
+          <FILE id="RiE74U" name="EulerGenusMorphModel.cpp" compile="1" resource="0"
+                file="Source/EulerGenusMorphModel.cpp"/>
+          <FILE id="qrqKU7" name="EulerGenusMorphModel+_createTuningConstructorMap.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModel+_createTuningConstructorMap.cpp"/>
+          <FILE id="vHXetg" name="EulerGenusMorphModel+_createTuningSelectionMap.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModel+_createTuningSelectionMap.cpp"/>
+          <FILE id="MktFR2" name="EulerGenusMorphModel+_createTuningUpdateMap.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModel+_createTuningUpdateMap.cpp"/>
+          <FILE id="GliYbL" name="EulerGenusMorphModel+_createViewModelConstructorMap.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModel+_createViewModelConstructorMap.cpp"/>
+        </GROUP>
+        <GROUP id="{2219E6EE-8274-4A50-01B4-0F3B8235F008}" name="Component">
+          <FILE id="U0rTXw" name="EulerGenusViewModel.h" compile="0" resource="0"
+                file="Source/EulerGenusViewModel.h"/>
+          <FILE id="oQsCHM" name="EulerGenusViewModel.cpp" compile="1" resource="0"
+                file="Source/EulerGenusViewModel.cpp"/>
+          <FILE id="rGJZYG" name="EulerGenusComponentV2.h" compile="0" resource="0"
+                file="Source/EulerGenusComponentV2.h"/>
+          <FILE id="xmCEQ1" name="EulerGenusComponentV2.cpp" compile="1" resource="0"
+                file="Source/EulerGenusComponentV2.cpp"/>
+        </GROUP>
+        <GROUP id="{B2BD153A-5B1D-6BA0-A912-D242C1E65080}" name="Codegen">
+          <FILE id="YDlomB" name="EulerGenusMorphModel+_createTuningConstructorMap_0000.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningConstructorMap_0000.cpp"/>
+          <FILE id="ybDtM1" name="EulerGenusMorphModel+_createTuningConstructorMap_0001.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningConstructorMap_0001.cpp"/>
+          <FILE id="rCyHQS" name="EulerGenusMorphModel+_createTuningConstructorMap_include.txt"
+                compile="0" resource="1" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningConstructorMap_include.txt"/>
+          <FILE id="tFtjAf" name="EulerGenusMorphModel+_createTuningConstructorMap_methods.txt"
+                compile="0" resource="1" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningConstructorMap_methods.txt"/>
+          <FILE id="j9qISP" name="EulerGenusMorphModel+_createTuningSelectionMap_0000.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0000.cpp"/>
+          <FILE id="A6u5gt" name="EulerGenusMorphModel+_createTuningSelectionMap_0001.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0001.cpp"/>
+          <FILE id="M8CJdk" name="EulerGenusMorphModel+_createTuningSelectionMap_0002.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0002.cpp"/>
+          <FILE id="Xw7vBa" name="EulerGenusMorphModel+_createTuningSelectionMap_0003.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0003.cpp"/>
+          <FILE id="XAo8Sv" name="EulerGenusMorphModel+_createTuningSelectionMap_0004.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0004.cpp"/>
+          <FILE id="DdvKpC" name="EulerGenusMorphModel+_createTuningSelectionMap_0005.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0005.cpp"/>
+          <FILE id="EPidcw" name="EulerGenusMorphModel+_createTuningSelectionMap_0006.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0006.cpp"/>
+          <FILE id="g7720K" name="EulerGenusMorphModel+_createTuningSelectionMap_0007.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0007.cpp"/>
+          <FILE id="wkCJ3K" name="EulerGenusMorphModel+_createTuningSelectionMap_0008.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0008.cpp"/>
+          <FILE id="NLIvaQ" name="EulerGenusMorphModel+_createTuningSelectionMap_0009.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0009.cpp"/>
+          <FILE id="tvWe4k" name="EulerGenusMorphModel+_createTuningSelectionMap_0010.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0010.cpp"/>
+          <FILE id="s3gkZP" name="EulerGenusMorphModel+_createTuningSelectionMap_0011.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0011.cpp"/>
+          <FILE id="iZwQaV" name="EulerGenusMorphModel+_createTuningSelectionMap_0012.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_0012.cpp"/>
+          <FILE id="HEg8Fh" name="EulerGenusMorphModel+_createTuningSelectionMap_include.txt"
+                compile="0" resource="1" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_include.txt"/>
+          <FILE id="Pj999e" name="EulerGenusMorphModel+_createTuningSelectionMap_methods.txt"
+                compile="0" resource="1" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningSelectionMap_methods.txt"/>
+          <FILE id="RebWdP" name="EulerGenusMorphModel+_createTuningUpdateMap_0000.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningUpdateMap_0000.cpp"/>
+          <FILE id="h4Cm5x" name="EulerGenusMorphModel+_createTuningUpdateMap_0001.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningUpdateMap_0001.cpp"/>
+          <FILE id="ROGEBf" name="EulerGenusMorphModel+_createTuningUpdateMap_include.txt"
+                compile="0" resource="1" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningUpdateMap_include.txt"/>
+          <FILE id="fm0Fjb" name="EulerGenusMorphModel+_createTuningUpdateMap_methods.txt"
+                compile="0" resource="1" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createTuningUpdateMap_methods.txt"/>
+          <FILE id="UiHTz6" name="EulerGenusMorphModel+_createViewModelConstructorMap_0000.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0000.cpp"/>
+          <FILE id="DzNoER" name="EulerGenusMorphModel+_createViewModelConstructorMap_0001.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0001.cpp"/>
+          <FILE id="FC8eAP" name="EulerGenusMorphModel+_createViewModelConstructorMap_0002.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0002.cpp"/>
+          <FILE id="w9wIZJ" name="EulerGenusMorphModel+_createViewModelConstructorMap_0003.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0003.cpp"/>
+          <FILE id="hJQp9X" name="EulerGenusMorphModel+_createViewModelConstructorMap_0004.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0004.cpp"/>
+          <FILE id="TSOQ9o" name="EulerGenusMorphModel+_createViewModelConstructorMap_0005.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0005.cpp"/>
+          <FILE id="s7wX1P" name="EulerGenusMorphModel+_createViewModelConstructorMap_0006.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0006.cpp"/>
+          <FILE id="IQ7e0D" name="EulerGenusMorphModel+_createViewModelConstructorMap_0007.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0007.cpp"/>
+          <FILE id="HI2jH4" name="EulerGenusMorphModel+_createViewModelConstructorMap_0008.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0008.cpp"/>
+          <FILE id="pmOMG2" name="EulerGenusMorphModel+_createViewModelConstructorMap_0009.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0009.cpp"/>
+          <FILE id="jhxYx2" name="EulerGenusMorphModel+_createViewModelConstructorMap_0010.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0010.cpp"/>
+          <FILE id="Fe7VGC" name="EulerGenusMorphModel+_createViewModelConstructorMap_0011.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0011.cpp"/>
+          <FILE id="CKv9im" name="EulerGenusMorphModel+_createViewModelConstructorMap_0012.cpp"
+                compile="1" resource="0" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_0012.cpp"/>
+          <FILE id="mrN9m2" name="EulerGenusMorphModel+_createViewModelConstructorMap_include.txt"
+                compile="0" resource="1" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_include.txt"/>
+          <FILE id="oU4QCP" name="EulerGenusMorphModel+_createViewModelConstructorMap_methods.txt"
+                compile="0" resource="1" file="Source/EulerGenusMorphModelCodegen/EulerGenusMorphModel+_createViewModelConstructorMap_methods.txt"/>
+          <FILE id="wHKf9o" name="EulerGenusModel+Codegen.cpp" compile="1" resource="0"
+                file="Source/EulerGenusModel+Codegen.cpp"/>
+          <FILE id="V7iH0w" name="CodegenStream.h" compile="0" resource="0" file="Source/CodegenStream.h"/>
+          <FILE id="PoTHLf" name="CodegenStream.cpp" compile="1" resource="0"
+                file="Source/CodegenStream.cpp"/>
+          <FILE id="x2MB8C" name="EulerGenusModel+_createDAWKeys_0000.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0000.cpp"/>
+          <FILE id="adfdKE" name="EulerGenusModel+_createDAWKeys_0001.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0001.cpp"/>
+          <FILE id="xoY913" name="EulerGenusModel+_createDAWKeys_0002.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0002.cpp"/>
+          <FILE id="JbVbya" name="EulerGenusModel+_createDAWKeys_0003.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0003.cpp"/>
+          <FILE id="h49QDH" name="EulerGenusModel+_createDAWKeys_0004.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0004.cpp"/>
+          <FILE id="ToLpIR" name="EulerGenusModel+_createDAWKeys_0005.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0005.cpp"/>
+          <FILE id="rednxk" name="EulerGenusModel+_createDAWKeys_0006.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0006.cpp"/>
+          <FILE id="h4FPQP" name="EulerGenusModel+_createDAWKeys_0007.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0007.cpp"/>
+          <FILE id="gHTWYY" name="EulerGenusModel+_createDAWKeys_0008.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0008.cpp"/>
+          <FILE id="sNQKFf" name="EulerGenusModel+_createDAWKeys_0009.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0009.cpp"/>
+          <FILE id="bB7Skf" name="EulerGenusModel+_createDAWKeys_0010.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0010.cpp"/>
+          <FILE id="Me4ErH" name="EulerGenusModel+_createDAWKeys_0011.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0011.cpp"/>
+          <FILE id="KxxOFA" name="EulerGenusModel+_createDAWKeys_0012.cpp" compile="1"
+                resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_0012.cpp"/>
+          <FILE id="dhIrSP" name="EulerGenusModel+_createDAWKeys_include.txt"
+                compile="0" resource="1" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_include.txt"/>
+          <FILE id="S2PR8H" name="EulerGenusModel+_createDAWKeys_methods.txt"
+                compile="0" resource="1" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createDAWKeys_methods.txt"/>
+          <FILE id="S04upg" name="EulerGenusModel+_createTuningConstructorMap_0000.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningConstructorMap_0000.cpp"/>
+          <FILE id="KjM0T5" name="EulerGenusModel+_createTuningConstructorMap_0001.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningConstructorMap_0001.cpp"/>
+          <FILE id="b3Chvj" name="EulerGenusModel+_createTuningConstructorMap_include.txt"
+                compile="0" resource="1" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningConstructorMap_include.txt"/>
+          <FILE id="MGFwg0" name="EulerGenusModel+_createTuningConstructorMap_methods.txt"
+                compile="0" resource="1" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningConstructorMap_methods.txt"/>
+          <FILE id="pc2q6R" name="EulerGenusModel+_createTuningSelectionMap_0000.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0000.cpp"/>
+          <FILE id="svBwyN" name="EulerGenusModel+_createTuningSelectionMap_0001.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0001.cpp"/>
+          <FILE id="pdwTrj" name="EulerGenusModel+_createTuningSelectionMap_0002.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0002.cpp"/>
+          <FILE id="CaEZEj" name="EulerGenusModel+_createTuningSelectionMap_0003.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0003.cpp"/>
+          <FILE id="hw1w5Q" name="EulerGenusModel+_createTuningSelectionMap_0004.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0004.cpp"/>
+          <FILE id="D8eoqb" name="EulerGenusModel+_createTuningSelectionMap_0005.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0005.cpp"/>
+          <FILE id="jzEU2M" name="EulerGenusModel+_createTuningSelectionMap_0006.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0006.cpp"/>
+          <FILE id="PGbIMD" name="EulerGenusModel+_createTuningSelectionMap_0007.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0007.cpp"/>
+          <FILE id="X9swsC" name="EulerGenusModel+_createTuningSelectionMap_0008.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0008.cpp"/>
+          <FILE id="vIpDDf" name="EulerGenusModel+_createTuningSelectionMap_0009.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0009.cpp"/>
+          <FILE id="fhSuxc" name="EulerGenusModel+_createTuningSelectionMap_0010.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0010.cpp"/>
+          <FILE id="ANFkaU" name="EulerGenusModel+_createTuningSelectionMap_0011.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0011.cpp"/>
+          <FILE id="pmyqXm" name="EulerGenusModel+_createTuningSelectionMap_0012.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_0012.cpp"/>
+          <FILE id="zdLJ5p" name="EulerGenusModel+_createTuningSelectionMap_include.txt"
+                compile="0" resource="1" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_include.txt"/>
+          <FILE id="Eh0NAR" name="EulerGenusModel+_createTuningSelectionMap_methods.txt"
+                compile="0" resource="1" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningSelectionMap_methods.txt"/>
+          <FILE id="HTpVwn" name="EulerGenusModel+_createTuningUpdateMap_0000.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningUpdateMap_0000.cpp"/>
+          <FILE id="KQ6gvj" name="EulerGenusModel+_createTuningUpdateMap_0001.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningUpdateMap_0001.cpp"/>
+          <FILE id="olx27W" name="EulerGenusModel+_createTuningUpdateMap_include.txt"
+                compile="0" resource="1" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningUpdateMap_include.txt"/>
+          <FILE id="gL3Jql" name="EulerGenusModel+_createTuningUpdateMap_methods.txt"
+                compile="0" resource="1" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createTuningUpdateMap_methods.txt"/>
+          <FILE id="YUdojy" name="EulerGenusModel+_createViewModelConstructorMap_0000.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0000.cpp"/>
+          <FILE id="HgFDaG" name="EulerGenusModel+_createViewModelConstructorMap_0001.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0001.cpp"/>
+          <FILE id="cMms1R" name="EulerGenusModel+_createViewModelConstructorMap_0002.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0002.cpp"/>
+          <FILE id="x4VJdY" name="EulerGenusModel+_createViewModelConstructorMap_0003.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0003.cpp"/>
+          <FILE id="tCH0fb" name="EulerGenusModel+_createViewModelConstructorMap_0004.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0004.cpp"/>
+          <FILE id="ZMhBkE" name="EulerGenusModel+_createViewModelConstructorMap_0005.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0005.cpp"/>
+          <FILE id="l1Lgfv" name="EulerGenusModel+_createViewModelConstructorMap_0006.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0006.cpp"/>
+          <FILE id="om2M0d" name="EulerGenusModel+_createViewModelConstructorMap_0007.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0007.cpp"/>
+          <FILE id="qnGC99" name="EulerGenusModel+_createViewModelConstructorMap_0008.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0008.cpp"/>
+          <FILE id="B6LxNr" name="EulerGenusModel+_createViewModelConstructorMap_0009.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0009.cpp"/>
+          <FILE id="KF7fJa" name="EulerGenusModel+_createViewModelConstructorMap_0010.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0010.cpp"/>
+          <FILE id="GqeUZJ" name="EulerGenusModel+_createViewModelConstructorMap_0011.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0011.cpp"/>
+          <FILE id="E2892k" name="EulerGenusModel+_createViewModelConstructorMap_0012.cpp"
+                compile="1" resource="0" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_0012.cpp"/>
+          <FILE id="nb3t71" name="EulerGenusModel+_createViewModelConstructorMap_include.txt"
+                compile="0" resource="1" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_include.txt"/>
+          <FILE id="PrBsJt" name="EulerGenusModel+_createViewModelConstructorMap_methods.txt"
+                compile="0" resource="1" file="Source/EulerGenusModelCodegen/EulerGenusModel+_createViewModelConstructorMap_methods.txt"/>
+        </GROUP>
+        <GROUP id="{25E542EE-3E8B-6C98-3E9C-A513EA9793F3}" name="deprecated">
+          <FILE id="Eb3VhJ" name="EulerGenusComponent.h" compile="0" resource="0"
+                file="Source/EulerGenusComponent.h"/>
+          <FILE id="dZ2mHC" name="EulerGenusComponent.cpp" compile="1" resource="0"
+                file="Source/EulerGenusComponent.cpp"/>
+          <FILE id="UtrhbC" name="EulerGenusComponent+Presets.cpp" compile="1"
+                resource="0" file="Source/EulerGenusComponent+Presets.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{2D2452AD-C541-4579-7AB9-25DF437AD00E}" name="Favorites">
+        <GROUP id="{0FA32920-0C9A-DAE1-D924-988C389BF7B2}" name="Model">
+          <FILE id="CzZ4KH" name="Favorite.h" compile="0" resource="0" file="Source/Favorite.h"/>
+          <FILE id="IeUY1g" name="Favorite.cpp" compile="1" resource="0" file="Source/Favorite.cpp"/>
+          <FILE id="W49C5J" name="FavoritesIconRenderer.h" compile="0" resource="0"
+                file="Source/FavoritesIconRenderer.h"/>
+          <FILE id="Zr4DaL" name="FavoritesIconRenderer.cpp" compile="1" resource="0"
+                file="Source/FavoritesIconRenderer.cpp"/>
+          <FILE id="xNG9gH" name="FavoritesModelV2.h" compile="0" resource="0"
+                file="Source/FavoritesModelV2.h"/>
+          <FILE id="ShKWxk" name="FavoritesModelV2.cpp" compile="1" resource="0"
+                file="Source/FavoritesModelV2.cpp"/>
+        </GROUP>
+        <GROUP id="{4B598AC7-800D-0BB8-573D-2628B3F302CD}" name="Component">
+          <FILE id="nW8z2w" name="FavoritesComponent.h" compile="0" resource="0"
+                file="Source/FavoritesComponent.h"/>
+          <FILE id="ISzfiY" name="FavoritesComponent.cpp" compile="1" resource="0"
+                file="Source/FavoritesComponent.cpp"/>
+          <FILE id="D9fmjv" name="FavoritesComponentMessageBus.h" compile="0"
+                resource="0" file="Source/FavoritesComponentMessageBus.h"/>
+          <FILE id="I2oz3L" name="FavoritesComponentMessageBus.cpp" compile="1"
+                resource="0" file="Source/FavoritesComponentMessageBus.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{D25D2CFE-7AE0-89CF-C971-B2FDA37BA281}" name="Morph">
+        <GROUP id="{AF43EB9B-A9BD-E829-42BB-38128849F06F}" name="Tuning">
+          <FILE id="lDybXn" name="Morph.h" compile="0" resource="0" file="Source/Morph.h"/>
+          <FILE id="uqQ70w" name="Morph.cpp" compile="1" resource="0" file="Source/Morph.cpp"/>
+        </GROUP>
+        <GROUP id="{2D333F9E-32B8-3D15-BF84-393874ABEB35}" name="Model">
+          <FILE id="mooOyo" name="MorphModel.h" compile="0" resource="0" file="Source/MorphModel.h"/>
+          <FILE id="fLB9pW" name="MorphModel.cpp" compile="1" resource="0" file="Source/MorphModel.cpp"/>
+          <FILE id="Z4jWHN" name="MorphABModel.h" compile="0" resource="0" file="Source/MorphABModel.h"/>
+          <FILE id="KNH3LJ" name="MorphABModel.cpp" compile="1" resource="0"
+                file="Source/MorphABModel.cpp"/>
+        </GROUP>
+        <GROUP id="{CEFBB3E0-0D30-380F-EB82-E6296475C86F}" name="Component">
+          <FILE id="T1FGUV" name="MorphComponent.h" compile="0" resource="0"
+                file="Source/MorphComponent.h"/>
+          <FILE id="cUfHw2" name="MorphComponent.cpp" compile="1" resource="0"
+                file="Source/MorphComponent.cpp"/>
+          <FILE id="ZoFEE0" name="MorphComponentMessageBus.h" compile="0" resource="0"
+                file="Source/MorphComponentMessageBus.h"/>
+          <FILE id="jqPMmY" name="MorphComponentMessageBus.cpp" compile="1" resource="0"
+                file="Source/MorphComponentMessageBus.cpp"/>
+          <FILE id="EdxbUT" name="MorphFavoritesAComponent.h" compile="0" resource="0"
+                file="Source/MorphFavoritesAComponent.h"/>
+          <FILE id="KwCZzG" name="MorphFavoritesAComponent.cpp" compile="1" resource="0"
+                file="Source/MorphFavoritesAComponent.cpp"/>
+          <FILE id="ZgQ3Zn" name="MorphFavoritesBComponent.h" compile="0" resource="0"
+                file="Source/MorphFavoritesBComponent.h"/>
+          <FILE id="n80UgI" name="MorphFavoritesBComponent.cpp" compile="1" resource="0"
+                file="Source/MorphFavoritesBComponent.cpp"/>
+          <FILE id="LlaQOn" name="MorphTuningComponent.h" compile="0" resource="0"
+                file="Source/MorphTuningComponent.h"/>
+          <FILE id="Rs9pFq" name="MorphTuningComponent.cpp" compile="1" resource="0"
+                file="Source/MorphTuningComponent.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{D6278F7F-4794-A664-59D0-6AB14C1FCBDF}" name="Partch">
+        <GROUP id="{844E49C8-8359-0659-4196-5CA9815D1884}" name="Tuning">
+          <FILE id="GitBv4" name="Partch.h" compile="0" resource="0" file="Source/Partch.h"/>
+          <FILE id="wLCGxa" name="Partch.cpp" compile="1" resource="0" file="Source/Partch.cpp"/>
+          <FILE id="TVNriR" name="PartchMicrotone.h" compile="0" resource="0"
+                file="Source/PartchMicrotone.h"/>
+          <FILE id="rurzUg" name="PartchMicrotone.cpp" compile="1" resource="0"
+                file="Source/PartchMicrotone.cpp"/>
+        </GROUP>
+        <GROUP id="{CA4F43E7-10EA-AC08-21DF-34C5A4EE3F69}" name="Model">
+          <FILE id="c6FO28" name="PartchModel.h" compile="0" resource="0" file="Source/PartchModel.h"/>
+          <FILE id="J4m2pN" name="PartchModel.cpp" compile="1" resource="0" file="Source/PartchModel.cpp"/>
+          <FILE id="VY0DdY" name="PartchMorphModel.h" compile="0" resource="0"
+                file="Source/PartchMorphModel.h"/>
+          <FILE id="k3kk2f" name="PartchMorphModel.cpp" compile="1" resource="0"
+                file="Source/PartchMorphModel.cpp"/>
+        </GROUP>
+        <GROUP id="{679CD95A-26D7-0B54-144C-E14D5F4F32DC}" name="Component">
+          <FILE id="oXvubj" name="PartchComponent.h" compile="0" resource="0"
+                file="Source/PartchComponent.h"/>
+          <FILE id="aGeBy2" name="PartchComponent.cpp" compile="1" resource="0"
+                file="Source/PartchComponent.cpp"/>
+          <FILE id="KHaYrT" name="PartchGraphComponent.h" compile="0" resource="0"
+                file="Source/PartchGraphComponent.h"/>
+          <FILE id="SgnK2k" name="PartchGraphComponent.cpp" compile="1" resource="0"
+                file="Source/PartchGraphComponent.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{F0A349F2-3D9C-E360-3D0B-61AEADCD7B7E}" name="Persian17">
+        <GROUP id="{F225F226-C61A-1A00-E6B3-68F08500BE4A}" name="Tuning">
+          <FILE id="KE049v" name="Persian17NorthIndian.h" compile="0" resource="0"
+                file="Source/Persian17NorthIndian.h"/>
+          <FILE id="sAP4i1" name="Persian17NorthIndian.cpp" compile="1" resource="0"
+                file="Source/Persian17NorthIndian.cpp"/>
+        </GROUP>
+        <GROUP id="{BD5CA4CF-52BD-F2BC-F6E5-7B0EBD60CBA8}" name="Model">
+          <FILE id="Lu5jaM" name="Persian17NorthIndianModel.h" compile="0" resource="0"
+                file="Source/Persian17NorthIndianModel.h"/>
+          <FILE id="XnSxTu" name="Persian17NorthIndianModel.cpp" compile="1"
+                resource="0" file="Source/Persian17NorthIndianModel.cpp"/>
+          <FILE id="KcZDt1" name="Persian17NorthIndianMorphModel.h" compile="0"
+                resource="0" file="Source/Persian17NorthIndianMorphModel.h"/>
+          <FILE id="sW6ryo" name="Persian17NorthIndianMorphModel.cpp" compile="1"
+                resource="0" file="Source/Persian17NorthIndianMorphModel.cpp"/>
+        </GROUP>
+        <GROUP id="{45648097-F25D-BFA4-F778-EB2F9D01E9C7}" name="Component">
+          <FILE id="xd0ozN" name="Persian17NorthIndianComponent.h" compile="0"
+                resource="0" file="Source/Persian17NorthIndianComponent.h"/>
+          <FILE id="FZAjfY" name="Persian17NorthIndianComponent.cpp" compile="1"
+                resource="0" file="Source/Persian17NorthIndianComponent.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{9376AE73-60E0-ACD0-4AA2-814610E7535C}" name="Presets">
+        <GROUP id="{88066E5D-15BE-7D4B-204A-9872081D7C14}" name="Model">
+          <FILE id="tAYEQw" name="PresetsModel.h" compile="0" resource="0" file="Source/PresetsModel.h"/>
+          <FILE id="j64wGO" name="PresetsModel.cpp" compile="1" resource="0"
+                file="Source/PresetsModel.cpp"/>
+          <FILE id="D0hrBC" name="PresetsModel+Presets.cpp" compile="1" resource="0"
+                file="Source/PresetsModel+Presets.cpp"/>
+          <FILE id="WbXzjv" name="PresetsMorphModel.h" compile="0" resource="0"
+                file="Source/PresetsMorphModel.h"/>
+          <FILE id="emnZsD" name="PresetsMorphModel.cpp" compile="1" resource="0"
+                file="Source/PresetsMorphModel.cpp"/>
+        </GROUP>
+        <GROUP id="{95AB4C4A-07EE-E8B6-7401-B2C2510701D9}" name="Component">
+          <FILE id="QDjuai" name="TmpPresetComponent.h" compile="0" resource="0"
+                file="Source/TmpPresetComponent.h"/>
+          <FILE id="DtgD5T" name="TmpPresetComponent.cpp" compile="1" resource="0"
+                file="Source/TmpPresetComponent.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{54678970-A27E-6752-00E9-7A21076565A7}" name="RecurrenceRelation">
+        <GROUP id="{DB7FF1B8-9FAE-F891-F854-1975FE4CD5D9}" name="Tuning">
+          <FILE id="CIbQX6" name="RecurrenceRelation.h" compile="0" resource="0"
+                file="Source/RecurrenceRelation.h"/>
+          <FILE id="AQlGTy" name="RecurrenceRelation.cpp" compile="1" resource="0"
+                file="Source/RecurrenceRelation.cpp"/>
+        </GROUP>
+        <GROUP id="{7B8C073A-97EE-B1E4-0B3F-7D410E1D9C91}" name="Model">
+          <FILE id="gctK5H" name="RecurrenceRelationModel.h" compile="0" resource="0"
+                file="Source/RecurrenceRelationModel.h"/>
+          <FILE id="zeuMqW" name="RecurrenceRelationModel.cpp" compile="1" resource="0"
+                file="Source/RecurrenceRelationModel.cpp"/>
+          <FILE id="toSb10" name="RecurrenceRelationMorphModel.h" compile="0"
+                resource="0" file="Source/RecurrenceRelationMorphModel.h"/>
+          <FILE id="PyIami" name="RecurrenceRelationMorphModel.cpp" compile="1"
+                resource="0" file="Source/RecurrenceRelationMorphModel.cpp"/>
+        </GROUP>
+        <GROUP id="{3C8DE39B-125C-4D65-636E-2BD363C400A1}" name="Component">
+          <FILE id="ndgkFm" name="RecurrenceRelationComponent.h" compile="0"
+                resource="0" file="Source/RecurrenceRelationComponent.h"/>
+          <FILE id="gujrKe" name="RecurrenceRelationComponent.cpp" compile="1"
+                resource="0" file="Source/RecurrenceRelationComponent.cpp"/>
+          <FILE id="AFT0xq" name="RecurrenceRelationSeedComponent.h" compile="0"
+                resource="0" file="Source/RecurrenceRelationSeedComponent.h"/>
+          <FILE id="PPnLKN" name="RecurrenceRelationSeedComponent.cpp" compile="1"
+                resource="0" file="Source/RecurrenceRelationSeedComponent.cpp"/>
+          <FILE id="n5m0ac" name="RecurrenceRelationCoefficientComponent.h" compile="0"
+                resource="0" file="Source/RecurrenceRelationCoefficientComponent.h"/>
+          <FILE id="oUVGFH" name="RecurrenceRelationCoefficientComponent.cpp"
+                compile="1" resource="0" file="Source/RecurrenceRelationCoefficientComponent.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{AC5BE59B-65F3-FC87-51D5-209EA8510340}" name="Scala">
+        <GROUP id="{93B1FBE4-AD8A-D035-EB89-E4C5D02B9EF0}" name="Tuning">
+          <FILE id="JODH3V" name="ScalaTuningImp.h" compile="0" resource="0"
+                file="Source/ScalaTuningImp.h"/>
+          <FILE id="CTWGS6" name="ScalaTuningImp.cpp" compile="1" resource="0"
+                file="Source/ScalaTuningImp.cpp"/>
+        </GROUP>
+        <GROUP id="{48298812-426B-3DA3-BF62-EF69BF70B2D9}" name="Model">
+          <GROUP id="{0CD48815-3A1C-703F-BB6C-A709868B698B}" name="ScalaFile">
+            <FILE id="Xi1An7" name="ScalaFile.h" compile="0" resource="0" file="Source/ScalaFile.h"/>
+            <FILE id="zJYGe6" name="ScalaFile.cpp" compile="1" resource="0" file="Source/ScalaFile.cpp"/>
+            <FILE id="MXGZtZ" name="ScalaFileDegree.h" compile="0" resource="0"
+                  file="Source/ScalaFileDegree.h"/>
+            <FILE id="b4JWSy" name="ScalaFileDegree.cpp" compile="1" resource="0"
+                  file="Source/ScalaFileDegree.cpp"/>
+            <FILE id="TM4SjY" name="ScalaFileKbm.h" compile="0" resource="0" file="Source/ScalaFileKbm.h"/>
+            <FILE id="LddrkZ" name="ScalaFileKbm.cpp" compile="1" resource="0"
+                  file="Source/ScalaFileKbm.cpp"/>
+            <FILE id="sr7HiX" name="ScalaFileScl.h" compile="0" resource="0" file="Source/ScalaFileScl.h"/>
+            <FILE id="NtvT1m" name="ScalaFileScl.cpp" compile="1" resource="0"
+                  file="Source/ScalaFileScl.cpp"/>
+          </GROUP>
+          <GROUP id="{58E3BD1B-BE88-3517-1A66-D7FDFC1825E9}" name="codegen">
+            <FILE id="sZ9DmK" name="ScalaIconRenderer.h" compile="0" resource="0"
+                  file="Source/ScalaIconRenderer.h"/>
+            <FILE id="nzOaOb" name="ScalaIconRenderer.cpp" compile="1" resource="0"
+                  file="Source/ScalaIconRenderer.cpp"/>
+          </GROUP>
+          <FILE id="dIl5EO" name="ScalaModel.h" compile="0" resource="0" file="Source/ScalaModel.h"/>
+          <FILE id="q9ADJA" name="ScalaModel.cpp" compile="1" resource="0" file="Source/ScalaModel.cpp"/>
+          <FILE id="pDziTe" name="ScalaMorphModel.h" compile="0" resource="0"
+                file="Source/ScalaMorphModel.h"/>
+          <FILE id="W0kdur" name="ScalaMorphModel.cpp" compile="1" resource="0"
+                file="Source/ScalaMorphModel.cpp"/>
+          <FILE id="adSRLI" name="ScalaModelProtocol.h" compile="0" resource="0"
+                file="Source/ScalaModelProtocol.h"/>
+          <FILE id="kvJ2VZ" name="ScalaBundleModel.h" compile="0" resource="0"
+                file="Source/ScalaBundleModel.h"/>
+          <FILE id="nuZbz6" name="ScalaBundleModel.cpp" compile="1" resource="0"
+                file="Source/ScalaBundleModel.cpp"/>
+          <FILE id="YhPjmz" name="ScalaUserModel.h" compile="0" resource="0"
+                file="Source/ScalaUserModel.h"/>
+          <FILE id="hYrpnM" name="ScalaUserModel.cpp" compile="1" resource="0"
+                file="Source/ScalaUserModel.cpp"/>
+        </GROUP>
+        <GROUP id="{F9286CE8-DF8F-3F0D-450C-C1ECB0F0F39D}" name="Component">
+          <FILE id="txjTNq" name="ScalaComponent.h" compile="0" resource="0"
+                file="Source/ScalaComponent.h"/>
+          <FILE id="d58LC5" name="ScalaComponent.cpp" compile="1" resource="0"
+                file="Source/ScalaComponent.cpp"/>
+          <FILE id="dB3co1" name="ScalaComponentMessageBus.h" compile="0" resource="0"
+                file="Source/ScalaComponentMessageBus.h"/>
+          <FILE id="hGL1t3" name="ScalaComponentMessageBus.cpp" compile="1" resource="0"
+                file="Source/ScalaComponentMessageBus.cpp"/>
+          <FILE id="mC1iJ4" name="ScalaComponent+FileDragAndDropTarget.cpp" compile="1"
+                resource="0" file="Source/ScalaComponent+FileDragAndDropTarget.cpp"/>
+          <FILE id="ZJiGIN" name="ScalaComponent+TableListBoxModel.cpp" compile="1"
+                resource="0" file="Source/ScalaComponent+TableListBoxModel.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{D52DCC97-2C5B-F0AB-AB8A-1BC28CAFE886}" name="Tritriadic">
+        <GROUP id="{95C75A3B-614C-5F41-2BE3-A3ACC18FCF89}" name="Tuning">
+          <FILE id="LGOXKh" name="TritriadicTuning.h" compile="0" resource="0"
+                file="Source/TritriadicTuning.h"/>
+          <FILE id="khDI4N" name="TritriadicTuning.cpp" compile="1" resource="0"
+                file="Source/TritriadicTuning.cpp"/>
+        </GROUP>
+        <GROUP id="{870CD40D-30D8-F8E4-3FDB-88BCBE53A4AE}" name="Model">
+          <FILE id="g05QHg" name="TritriadicModel.h" compile="0" resource="0"
+                file="Source/TritriadicModel.h"/>
+          <FILE id="KgBX1b" name="TritriadicModel.cpp" compile="1" resource="0"
+                file="Source/TritriadicModel.cpp"/>
+          <FILE id="k5nGX9" name="TritriadicMorphModel.h" compile="0" resource="0"
+                file="Source/TritriadicMorphModel.h"/>
+          <FILE id="DqPbnr" name="TritriadicMorphModel.cpp" compile="1" resource="0"
+                file="Source/TritriadicMorphModel.cpp"/>
+        </GROUP>
+        <GROUP id="{9D8285E3-45C0-B363-83EF-9DD94ECCE53F}" name="Component">
+          <FILE id="qWEVVB" name="TritriadicComponent.h" compile="0" resource="0"
+                file="Source/TritriadicComponent.h"/>
+          <FILE id="IjzXCU" name="TritriadicComponent.cpp" compile="1" resource="0"
+                file="Source/TritriadicComponent.cpp"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{B4DD924D-AE11-830D-2641-1B38449F3CC6}" name="Synth">
+        <FILE id="UxjUjK" name="CustomComponent.h" compile="0" resource="0"
+              file="Source/CustomComponent.h"/>
+        <FILE id="WvHKgT" name="CustomComponent.cpp" compile="1" resource="0"
+              file="Source/CustomComponent.cpp"/>
+        <FILE id="MMy9gd" name="VoiceState.h" compile="0" resource="0" file="Source/VoiceState.h"/>
+        <FILE id="VpgdM2" name="VoiceState.cpp" compile="1" resource="0" file="Source/VoiceState.cpp"/>
+        <FILE id="qYKt9s" name="VoiceStates.h" compile="0" resource="0" file="Source/VoiceStates.h"/>
+        <FILE id="gjwnyy" name="VoiceStates.cpp" compile="1" resource="0" file="Source/VoiceStates.cpp"/>
+        <FILE id="SeCmZ6" name="SynthComponent.h" compile="0" resource="0"
+              file="Source/SynthComponent.h"/>
+        <FILE id="ldOu9j" name="SynthComponent.cpp" compile="1" resource="0"
+              file="Source/SynthComponent.cpp"/>
+        <FILE id="QaZGiH" name="SynthSound.h" compile="0" resource="0" file="Source/SynthSound.h"/>
+        <FILE id="GCUsbi" name="SynthSound.cpp" compile="1" resource="0" file="Source/SynthSound.cpp"/>
+        <FILE id="c3k4B6" name="SynthVoice.h" compile="0" resource="0" file="Source/SynthVoice.h"/>
+        <FILE id="SKCqxY" name="SynthVoice.cpp" compile="1" resource="0" file="Source/SynthVoice.cpp"/>
+        <FILE id="j63WOh" name="ReverbComponent.h" compile="0" resource="0"
+              file="Source/ReverbComponent.h"/>
+        <FILE id="UW4rso" name="ReverbComponent.cpp" compile="1" resource="0"
+              file="Source/ReverbComponent.cpp"/>
+        <FILE id="Lkh20S" name="OscComponent.h" compile="0" resource="0" file="Source/OscComponent.h"/>
+        <FILE id="q4p7NJ" name="OscComponent.cpp" compile="1" resource="0"
+              file="Source/OscComponent.cpp"/>
+        <FILE id="PQzq1a" name="OscData.h" compile="0" resource="0" file="Source/OscData.h"/>
+        <FILE id="Vj7EZS" name="OscData.cpp" compile="1" resource="0" file="Source/OscData.cpp"/>
+        <FILE id="BdiGyz" name="LfoComponent.h" compile="0" resource="0" file="Source/LfoComponent.h"/>
+        <FILE id="tDByEW" name="LfoComponent.cpp" compile="1" resource="0"
+              file="Source/LfoComponent.cpp"/>
+        <FILE id="qdX6iN" name="MeterComponent.h" compile="0" resource="0"
+              file="Source/MeterComponent.h"/>
+        <FILE id="X3v2Cv" name="MeterComponent.cpp" compile="1" resource="0"
+              file="Source/MeterComponent.cpp"/>
+        <FILE id="riKyLz" name="MeterData.h" compile="0" resource="0" file="Source/MeterData.h"/>
+        <FILE id="l5wglr" name="MeterData.cpp" compile="1" resource="0" file="Source/MeterData.cpp"/>
+        <FILE id="li3Onx" name="FilterComponent.h" compile="0" resource="0"
+              file="Source/FilterComponent.h"/>
+        <FILE id="umv0Dd" name="FilterComponent.cpp" compile="1" resource="0"
+              file="Source/FilterComponent.cpp"/>
+        <FILE id="WnSJg6" name="FilterData.h" compile="0" resource="0" file="Source/FilterData.h"/>
+        <FILE id="R1DcrH" name="FilterData.cpp" compile="1" resource="0" file="Source/FilterData.cpp"/>
+        <FILE id="nUztCH" name="AdsrComponent.h" compile="0" resource="0" file="Source/AdsrComponent.h"/>
+        <FILE id="o2A0AR" name="AdsrComponent.cpp" compile="1" resource="0"
+              file="Source/AdsrComponent.cpp"/>
+        <FILE id="MAlFHR" name="AdsrData.h" compile="0" resource="0" file="Source/AdsrData.h"/>
+        <FILE id="wfulrw" name="AdsrData.cpp" compile="1" resource="0" file="Source/AdsrData.cpp"/>
+      </GROUP>
+      <GROUP id="{F250DDF1-7F96-24E8-30B9-482DE02C4349}" name="Tests">
+        <FILE id="pqoueY" name="TuningTests.h" compile="0" resource="0" file="Source/TuningTests.h"/>
+        <FILE id="YjOmi1" name="TuningTests.cpp" compile="1" resource="0" file="Source/TuningTests.cpp"/>
+        <FILE id="ml3YbF" name="TuningTests+Brun.cpp" compile="1" resource="0"
+              file="Source/TuningTests+Brun.cpp"/>
+        <FILE id="O5JVrv" name="TuningTests+BrunMicrotone.cpp" compile="1"
+              resource="0" file="Source/TuningTests+BrunMicrotone.cpp"/>
+        <FILE id="dIw6CL" name="TuningTests+CoPrime.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CoPrime.cpp"/>
+        <FILE id="AkcGpq" name="TuningTests+CPS.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS.cpp"/>
+        <FILE id="tyJP9y" name="TuningTests+CPS_1_1.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS_1_1.cpp"/>
+        <FILE id="ES2A06" name="TuningTests+CPS_2_1.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS_2_1.cpp"/>
+        <FILE id="p6yWba" name="TuningTests+CPS_2_2.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS_2_2.cpp"/>
+        <FILE id="CyfonY" name="TuningTests+CPS_3_1.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS_3_1.cpp"/>
+        <FILE id="kkckIX" name="TuningTests+CPS_3_2.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS_3_2.cpp"/>
+        <FILE id="hx1jqP" name="TuningTests+CPS_3_3.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS_3_3.cpp"/>
+        <FILE id="x9UgZT" name="TuningTests+CPS_4_2.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS_4_2.cpp"/>
+        <FILE id="o9hUzs" name="TuningTests+CPS_5_2.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS_5_2.cpp"/>
+        <FILE id="PQbGTS" name="TuningTests+CPS_5_3.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS_5_3.cpp"/>
+        <FILE id="m1e0Q0" name="TuningTests+CPS_6_3.cpp" compile="1" resource="0"
+              file="Source/TuningTests+CPS_6_3.cpp"/>
+        <FILE id="j7QcWW" name="TuningTests+CPS_DAW_Automation.cpp" compile="1"
+              resource="0" file="Source/TuningTests+CPS_DAW_Automation.cpp"/>
+        <FILE id="uaNtOv" name="TuningTests+Diamonds.cpp" compile="1" resource="0"
+              file="Source/TuningTests+Diamonds.cpp"/>
+        <FILE id="NYtB8q" name="TuningTests+EighthOctaveOvertone.cpp" compile="1"
+              resource="0" file="Source/TuningTests+EighthOctaveOvertone.cpp"/>
+        <FILE id="w8b4O0" name="TuningTests+EulerGenus_1.cpp" compile="1" resource="0"
+              file="Source/TuningTests+EulerGenus_1.cpp"/>
+        <FILE id="ZWM5F9" name="TuningTests+EulerGenus6Codegen.cpp" compile="1"
+              resource="0" file="Source/TuningTests+EulerGenus6Codegen.cpp"/>
+        <FILE id="Zd6Bho" name="TuningTests+Microtone.cpp" compile="1" resource="0"
+              file="Source/TuningTests+Microtone.cpp"/>
+        <FILE id="PJG15u" name="TuningTests+MicrotoneArray.cpp" compile="1"
+              resource="0" file="Source/TuningTests+MicrotoneArray.cpp"/>
+        <FILE id="KuFwQs" name="TuningTests+Persian17NorthIndian.cpp" compile="1"
+              resource="0" file="Source/TuningTests+Persian17NorthIndian.cpp"/>
+        <FILE id="jWL3Zc" name="TuningTests+PentatonicFlutes.cpp" compile="1"
+              resource="0" file="Source/TuningTests+PentatonicFlutes.cpp"/>
+        <FILE id="mGsXgg" name="TuningTests+RecurrenceRelation.cpp" compile="1"
+              resource="0" file="Source/TuningTests+RecurrenceRelation.cpp"/>
+        <FILE id="aN6Cb2" name="TuningTests+Tuning.cpp" compile="1" resource="0"
+              file="Source/TuningTests+Tuning.cpp"/>
+        <FILE id="ZPiZ2P" name="TuningTests+TuningTable.cpp" compile="1" resource="0"
+              file="Source/TuningTests+TuningTable.cpp"/>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{0C1333A0-5511-4AE6-965F-2B4D40DF91BE}" name="Resources">
+      <FILE id="sTSGVd" name="scala_bundle_00_v0.xml" compile="0" resource="1"
+            file="Resources/scala_bundle_00_v0.xml"/>
+      <FILE id="qFZJNf" name="success-green-96.png" compile="0" resource="1"
+            file="Resources/success-green-96.png"/>
+      <FILE id="mmHcai" name="warning-red-96.png" compile="0" resource="1"
+            file="Resources/warning-red-96.png"/>
+      <FILE id="c8I5sn" name="warning-yellow-96.png" compile="0" resource="1"
+            file="Resources/warning-yellow-96.png"/>
+      <FILE id="G5AqF4" name="wilsonic_icon_03_512.png" compile="0" resource="1"
+            file="Resources/wilsonic_icon_03_512.png"/>
+    </GROUP>
+    <GROUP id="{3B42A965-6057-FFAA-40C4-996049FD892F}" name="MTS-ESP">
+      <FILE id="GmV8kX" name="libMTSMaster.h" compile="0" resource="0" file="Source/MTS-ESP/libMTSMaster.h"/>
+      <FILE id="YusukV" name="libMTSMaster.cpp" compile="1" resource="0"
+            file="Source/MTS-ESP/libMTSMaster.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" hardenedRuntime="1" hardenedRuntimeOptions="com.apple.security.cs.allow-dyld-environment-variables"
+               smallIcon="G5AqF4" bigIcon="G5AqF4" applicationCategory="public.app-category.music"
+               xcodeValidArchs="arm64,x86_64" iosDevelopmentTeamID="LXFXL9GS49"
+               extraLinkerFlags="-Wl,-ld_classic " extraDefs="JUCE_SILENCE_XCODE_15_LINKER_WARNING">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="WilsonicController" recommendedWarnings="LLVM"
+                       customXcodeFlags="GCC_GENERATE_DEBUGGING_SYMBOLS=YES,&#10;GCC_DEBUGGING_SYMBOLS=full,&#10;DEBUG_INFORMATION_FORMAT=dwarf-with-dsym,&#10;COPY_PHASE_STRIP = YES"
+                       defines="JUCE_CATCH_UNHANDLED_EXCEPTIONS=1" osxCompatibility="10.13 SDK"
+                       macOSBaseSDK="14.0" osxSDK="14.0 SDK" macOSDeploymentTarget="10.13"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="WilsonicController" vst3BinaryLocation="/Library/Audio/Plug-Ins/VST3/"
+                       auBinaryLocation="/Library/Audio/Plug-Ins/Components/" stripLocalSymbols="1"
+                       customXcodeFlags="GCC_GENERATE_DEBUGGING_SYMBOLS=YES,&#10;GCC_DEBUGGING_SYMBOLS=full,&#10;DEBUG_INFORMATION_FORMAT=dwarf-with-dsym,&#10;COPY_PHASE_STRIP = YES"
+                       osxCompatibility="10.13 SDK" macOSBaseSDK="14.0" osxSDK="14.0 SDK"
+                       macOSDeploymentTarget="10.13"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_analytics" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2022 targetFolder="Builds/VisualStudio2022" bigIcon="G5AqF4" smallIcon="G5AqF4">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_analytics" path="../../juce"/>
+        <MODULEPATH id="juce_audio_basics" path="../../juce"/>
+        <MODULEPATH id="juce_audio_devices" path="../../juce"/>
+        <MODULEPATH id="juce_audio_formats" path="../../juce"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../juce"/>
+        <MODULEPATH id="juce_audio_processors" path="../../juce"/>
+        <MODULEPATH id="juce_audio_utils" path="../../juce"/>
+        <MODULEPATH id="juce_core" path="../../juce"/>
+        <MODULEPATH id="juce_data_structures" path="../../juce"/>
+        <MODULEPATH id="juce_dsp" path="../../juce"/>
+        <MODULEPATH id="juce_events" path="../../juce"/>
+        <MODULEPATH id="juce_graphics" path="../../juce"/>
+        <MODULEPATH id="juce_gui_basics" path="../../juce"/>
+        <MODULEPATH id="juce_gui_extra" path="../../juce"/>
+      </MODULEPATHS>
+    </VS2022>
+    <XCODE_IPHONE targetFolder="Builds/iOS" iosDevelopmentTeamID="LXFXL9GS49" bigIcon="G5AqF4"
+                  smallIcon="G5AqF4" iosScreenOrientation="UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight"
+                  iPadScreenOrientation="UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight"
+                  microphonePermissionNeeded="1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" customXcodeFlags="GCC_GENERATE_DEBUGGING_SYMBOLS=YES,&#10;GCC_DEBUGGING_SYMBOLS=full,&#10;DEBUG_INFORMATION_FORMAT=dwarf-with-dsym,&#10;COPY_PHASE_STRIP = YES"
+                       iosDeploymentTarget="15.0" iosCompatibility="15.0"/>
+        <CONFIGURATION isDebug="0" name="Release" customXcodeFlags="GCC_GENERATE_DEBUGGING_SYMBOLS=YES,&#10;GCC_DEBUGGING_SYMBOLS=full,&#10;DEBUG_INFORMATION_FORMAT=dwarf-with-dsym,&#10;COPY_PHASE_STRIP = YES"
+                       iosDeploymentTarget="15.0" iosCompatibility="15.0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_analytics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="/Users/marcushobbs/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
+    <ANDROIDSTUDIO targetFolder="Builds/Android">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_analytics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="/Users/marcushobbs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="/Users/marcushobbs/JUCE/modules"/>
+      </MODULEPATHS>
+    </ANDROIDSTUDIO>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_analytics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>

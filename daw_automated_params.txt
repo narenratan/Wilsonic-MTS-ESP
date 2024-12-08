@@ -1,0 +1,95 @@
+Wilsonic|Favorites ID
+
+Wilsonic|Designs
+
+App Tuning|Enable Notes Per Octave Override
+App Tuning|Frequency Middle C
+App Tuning|Note Number Middle C
+App Tuning|Notes Per Octave Override
+App Tuning|Period Middle C
+
+Wilson's Garden|Presets
+
+Brun2|Auto Murchana
+Brun2|Generator
+Brun2|Level
+Brun2|Level Gral Keyboard
+Brun2|Murchana
+Brun2|Period
+
+17-Persian N. Indian Raga|Scale
+
+CPS|A
+CPS|B
+CPS|C
+CPS|D
+CPS|E
+CPS|F
+CPS|Scale
+
+Euler Genus 6|A
+Euler Genus 6|B
+Euler Genus 6|C
+Euler Genus 6|D
+Euler Genus 6|E
+Euler Genus 6|F
+Euler Genus 6|Preset
+
+Recurrence Relation|Cn_1
+Recurrence Relation|Cn_2
+Recurrence Relation|Cn_3
+Recurrence Relation|Cn_4
+Recurrence Relation|Cn_5
+Recurrence Relation|Cn_6
+Recurrence Relation|Cn_7
+Recurrence Relation|Cn_8
+Recurrence Relation|Cn_9
+Recurrence Relation|Hn_1
+Recurrence Relation|Hn_2
+Recurrence Relation|Hn_3
+Recurrence Relation|Hn_4
+Recurrence Relation|Hn_5
+Recurrence Relation|Hn_6
+Recurrence Relation|Hn_7
+Recurrence Relation|Hn_8
+Recurrence Relation|Hn_9
+Recurrence Relation|Index
+Recurrence Relation|Offset
+Recurrence Relation|Terms
+
+Equal Temperament|ET
+Equal Temperament|Period
+
+Tritriadic|Dominant
+Tritriadic|Mediant
+
+Scala|Library
+Scala|Bundled Tuning ID
+Scala|User Tuning ID
+
+CoPrime|A
+CoPrime|B
+CoPrime|C
+CoPrime|D
+CoPrime|S
+CoPrime|T
+CoPrime|X
+CoPrime|Y
+CoPrime|Display Mode
+
+Diamonds|Preset
+Diamonds|A
+Diamonds|B
+Diamonds|C
+Diamonds|D
+Diamonds|E
+Diamonds|F
+Diamonds|G
+Diamonds|H
+
+Morph|Favorite A ID
+Morph|Favorite B ID
+Morph|Interpolation Type
+Morph|Interpolation Value
+
+Partch|Scale

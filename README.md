@@ -1,5 +1,5 @@
 # Wilsonic MTS-ESP
-
+![Wilsonic MTS-ESP](./Resources/wilsonic_icon_03_512.png)
 Wilsonic MTS-ESP is an advanced audio plugin and standalone application for creative sound design and music production. It tunes up the software synthesizers in your DAW via MTS-ESP; it has a simple synth that you can use to confirm your synths are all in tune.  The Wilsonic Controller target outputs MIDI, while also tuning up all soft synths in your DAW via MTS-ESP.
 
 ## Features
@@ -43,7 +43,7 @@ Wilsonic MTS-ESP is an advanced audio plugin and standalone application for crea
    cd Wilsonic-MTS-ESP
    ```
 
-2. Open the Wilsonic.jucer file in Projucer.
+2. Open the Wilsonic.jucer or WilsonicController.jucer file in Projucer.
 
 3. In Projucer, select your target IDE (Xcode for macOS or Visual Studio for Windows) and click "Save and Open in IDE".
 

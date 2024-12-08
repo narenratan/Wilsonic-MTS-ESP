@@ -1,21 +1,22 @@
 # Wilsonic
 
-Wilsonic is an advanced audio plugin and standalone application for creative sound design and music production. It features a powerful synthesizer engine with MTS-ESP support for microtuning capabilities.
+Wilsonic is an advanced audio plugin and standalone application for creative sound design and music production. It tunes up the software synthesizers in your DAW via MTS-ESP; it has a simple synth that you can use to confirm your synths are all in tune.  The Wilsonic Controller target outputs MIDI, while also tuning up all soft synths in your DAW via MTS-ESP.
 
 ## Features
 
 - Standalone application and plugin formats (VST3, AU)
 - MTS-ESP support for microtuning
-- Advanced sound design capabilities
+- Wilsonic Controller outputs MIDI, while also tuning up all soft synths in your DAW via MTS-ESP
 - Cross-platform compatibility (macOS, Windows)
 - Intuitive user interface
+- Interactive visualization of dynamic tuning systems
 
 ## Installation
 
 ### macOS
 
 1. Download the latest Wilsonic installer for macOS from the [releases page](https://github.com/marcus-w-hobbs/Wilsonic-MTS-ESP/releases).
-2. Open the downloaded `.pkg` file and follow the installation wizard.
+2. Open the downloaded `.zip` file and follow the installation wizard.
 3. The standalone application will be installed in your Applications folder.
 4. Audio Unit (AU) and VST3 plugins will be installed in their respective system folders.
 
@@ -38,8 +39,8 @@ Wilsonic is an advanced audio plugin and standalone application for creative sou
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/wilsonic.git
-   cd wilsonic
+   git clone https://github.com/marcus-w-hobbs/Wilsonic-MTS-ESP.git
+   cd Wilsonic-MTS-ESP
    ```
 
 2. Open the Wilsonic.jucer file in Projucer.

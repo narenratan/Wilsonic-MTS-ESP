@@ -2,16 +2,16 @@
 
 <img src="./Resources/wilsonic_icon_03_512.png" alt="Wilsonic Icon" width="200">
 
-Wilsonic MTS-ESP is an advanced audio plugin and standalone application for creative sound design and music production. It tunes up the software synthesizers in your DAW via MTS-ESP; it has a simple synth that you can use to confirm your synths are all in tune.  The Wilsonic Controller target outputs MIDI, while also tuning up all soft synths in your DAW via MTS-ESP.
+Wilsonic MTS-ESP is an advanced audio plugin and standalone application for creative sound design and music production. It tunes up the software synthesizers in your DAW via MTS-ESP to the scale designs of Erv Wilson; it has a simple synth that you can use to confirm your synths are all in tune.  The Wilsonic Controller target outputs MIDI, while also tuning up all soft synths in your DAW via MTS-ESP.  You can use WilsonicController to perform on generalized keyboard layouts
 
 ## Features
 
+- Interactive musical scale design and visualization of the tuning systems of Erv Wilson
+- Scale design parameters are automatable in your DAW, and therefore editable
 - Standalone application and plugin formats (VST3, AU)
 - MTS-ESP support for microtuning
-- Wilsonic Controller outputs MIDI, while also tuning up all soft synths in your DAW via MTS-ESP
+- WilsonicController outputs MIDI, while also tuning up all soft synths in your DAW via MTS-ESP
 - Cross-platform compatibility (macOS, Windows)
-- Intuitive user interface
-- Interactive visualization of dynamic tuning systems
 
 ## Installation
 

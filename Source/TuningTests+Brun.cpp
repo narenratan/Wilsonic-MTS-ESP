@@ -211,8 +211,8 @@ void TuningTests::test_brun_terumi_gral_disjunction()
         // ox + oy = column of the octave
         auto ox = octavePoint.getX();
         auto oy = octavePoint.getY();
-        jassert(!isinf(x) && !isinf(y) && !isinf(ox) && !isinf(oy));
-        jassert(!isnan(x) && !isnan(y) && !isnan(ox) && !isnan(oy));
+        jassert(!std::isinf(x) && !std::isinf(y) && !std::isinf(ox) && !std::isinf(oy));
+        jassert(!std::isnan(x) && !std::isnan(y) && !std::isnan(ox) && !std::isnan(oy));
         auto retVal = inPoint;
         if ((x + y) > (ox + oy))
         {
@@ -332,8 +332,8 @@ void TuningTests::test_brun_gral_mapping()
         // ox + oy = column of the octave
         auto ox = octavePoint.getX();
         auto oy = octavePoint.getY();
-        jassert(!isinf(x) && !isinf(y) && !isinf(ox) && !isinf(oy));
-        jassert(!isnan(x) && !isnan(y) && !isnan(ox) && !isnan(oy));
+        jassert(!std::isinf(x) && !std::isinf(y) && !std::isinf(ox) && !std::isinf(oy));
+        jassert(!std::isnan(x) && !std::isnan(y) && !std::isnan(ox) && !std::isnan(oy));
         auto retVal = inPoint;
         if ((x + y) > (ox + oy))
         {

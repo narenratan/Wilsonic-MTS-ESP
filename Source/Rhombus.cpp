@@ -13,14 +13,14 @@
 bool Rhombus::isRhombusNAN (const Rhombus& r)
 {
     bool const retVal =
-    isnan (r.px0y0.x) || isinf (r.px0y0.x) ||
-    isnan (r.px0y0.y) || isinf (r.px0y0.y) ||
-    isnan (r.px0y1.x) || isinf (r.px0y1.x) ||
-    isnan (r.px0y1.y) || isinf (r.px0y1.y) ||
-    isnan (r.px1y0.x) || isinf (r.px1y0.x) ||
-    isnan (r.px1y0.y) || isinf (r.px1y0.y) ||
-    isnan (r.px1y1.x) || isinf (r.px1y1.x) ||
-    isnan (r.px1y1.y) || isinf (r.px1y1.y);
+    std::isnan (r.px0y0.x) || std::isinf (r.px0y0.x) ||
+    std::isnan (r.px0y0.y) || std::isinf (r.px0y0.y) ||
+    std::isnan (r.px0y1.x) || std::isinf (r.px0y1.x) ||
+    std::isnan (r.px0y1.y) || std::isinf (r.px0y1.y) ||
+    std::isnan (r.px1y0.x) || std::isinf (r.px1y0.x) ||
+    std::isnan (r.px1y0.y) || std::isinf (r.px1y0.y) ||
+    std::isnan (r.px1y1.x) || std::isinf (r.px1y1.x) ||
+    std::isnan (r.px1y1.y) || std::isinf (r.px1y1.y);
 
     return retVal;
 }

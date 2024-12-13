@@ -521,7 +521,7 @@ void RecurrenceRelation::_updateRecurrenceRelation()
         auto const mti = raw_ma.microtoneAtIndex(i);
         auto const mtj = raw_ma.microtoneAtIndex(j);
         auto const f   = ci * mti->getFrequencyValue() + cj * mtj->getFrequencyValue();
-        if(isnan(f) || isinf(f) || f < 0)
+        if(std::isnan(f) || std::isinf(f) || f < 0)
         {
             _log += "\n! \n! Sequence did not converge.\n";
             if(_divergenceCompletionBlock != nullptr)

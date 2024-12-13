@@ -328,7 +328,7 @@ MicrotoneArray Brun::_microtoneArrayBrun(unsigned long l, float g01, unsigned lo
     for (unsigned long i = 0; i < numScaleDegrees; i++) {
         auto degree = static_cast<int>(static_cast<float>(i) - murchana);
         auto p = static_cast<float>(degree) * g01;
-        jassert(!isnan(p) && !isinf(p));
+        jassert(!std::isnan(p) && !std::isinf(p));
         while (p < 0.f) {
             p += 1.f;
         }

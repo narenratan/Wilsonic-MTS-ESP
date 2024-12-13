@@ -66,8 +66,8 @@ void TuningTableImp::setSampleRate(float sampleRate) {
  */
 void TuningTableImp::setTuningTable(float frequency, unsigned long index) {
     // how do we limit frequencies in the context of dsp and microtonality?
-    jassert(!isnan(frequency));
-    jassert(!isinf(frequency));
+    jassert(!std::isnan(frequency));
+    jassert(!std::isinf(frequency));
     jassert(frequency > 0);
 
     // TODO: Handle clamping based on nyquist, and dynamic sample rate

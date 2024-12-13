@@ -25,8 +25,8 @@ Fraction::Fraction(unsigned long numerator)
 Fraction::Fraction(unsigned long numerator, unsigned long denominator, bool should_reduce)
 :_num(numerator)
 ,_den(denominator) {
-    jassert(!isnan(_num));
-    jassert(!isnan(_den));
+    jassert(!std::isnan(_num));
+    jassert(!std::isnan(_den));
     if(denominator == 0) {
         // TODO: Marcus: need to handle 1/0 for Brun, etc.
         DBG ("Fraction::Fraction: ("+String(numerator)+"/"+String(denominator)+": Denominator is 0!!");

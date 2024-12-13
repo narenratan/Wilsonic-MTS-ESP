@@ -216,8 +216,8 @@ float TuningImp::getOctave() {
 
 void TuningImp::setOctave(float o) {
     jassert(o > 0.f);
-    jassert(!isnan(o));
-    jassert(!isinf(o));
+    jassert(!std::isnan(o));
+    jassert(!std::isinf(o));
     if(WilsonicMath::floatsAreNotEqual(_octave, o) && (o >= _octaveMin) && (o <= _octaveMax)) {
         _octave = o;
         _update();
@@ -596,7 +596,7 @@ void TuningImp::setMicrotoneArrayFromHarmonics(vector<float> harmonics) {
     const ScopedLock sl(_lock);
     _microtoneArray.removeAllMicrotones();
     for (auto f : harmonics) {
-        if (f > 0.f && !isnan(f) && !isinf(f)) {
+        if (f > 0.f && !std::isnan(f) && !std::isinf(f)) {
             _microtoneArray.addMicrotone(make_shared<Microtone>(f));
         }
     }
@@ -955,8 +955,8 @@ Point<float> TuningImp::_octaveReduceGralPoint(Point<float> inPoint, Point<float
     auto const oy = octavePoint.getY();
 
     // ensure the coordinates are not infinity or NaN
-    jassert(!isinf(x) && !isinf(y) && !isinf(ox) && !isinf(oy));
-    jassert(!isnan(x) && !isnan(y) && !isnan(ox) && !isnan(oy));
+    jassert(!std::isinf(x) && !std::isinf(y) && !std::isinf(ox) && !std::isinf(oy));
+    jassert(!std::isnan(x) && !std::isnan(y) && !std::isnan(ox) && !std::isnan(oy));
     // 1/1 is the only layout where x == y
     jassert(WilsonicMath::floatsAreNotEqual(ox, oy) || (WilsonicMath::floatsAreEqual(ox, 1.f) && WilsonicMath::floatsAreEqual(oy, 1.f)));
 

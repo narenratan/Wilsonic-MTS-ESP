@@ -311,7 +311,7 @@ float AppTuningModel::getPitchColorOffset() {
 
 // DEPRECATED
 Colour AppTuningModel::colorForFrequency(float f, float v01, float delta) {
-    if (f <= 0 || isnan(f) || isinf(f)) { // must be positive and finite
+    if (f <= 0 || std::isnan(f) || std::isinf(f)) { // must be positive and finite
         return AppExperiments::frequencyOutOfRangeColor();
     }
     auto const period = _targetTuning->getOctave();
@@ -328,7 +328,7 @@ Colour AppTuningModel::colorForFrequency(float f, float v01, float delta) {
 
 Colour AppTuningModel::colorForPitch01(float p01, float v01, float delta) {
     // must be finite
-    if(isnan(p01) || isinf(p01) || isnan(delta) || isinf(delta)) {
+    if(std::isnan(p01) || std::isinf(p01) || std::isnan(delta) || std::isinf(delta)) {
         return AppExperiments::frequencyOutOfRangeColor();
     }
     p01 = jlimit(0.f, 1.f, p01); // TODO: fmodf this?
@@ -349,7 +349,7 @@ Colour AppTuningModel::colorForPitch01(float p01, float v01, float delta) {
 // p is in log-base-period space
 Colour AppTuningModel::colorForPitchNoOffset(float p) {
     // must be finite
-    if (isnan(p) || isinf(p)) {
+    if (std::isnan(p) || std::isinf(p)) {
         return AppExperiments::frequencyOutOfRangeColor();
     }
 

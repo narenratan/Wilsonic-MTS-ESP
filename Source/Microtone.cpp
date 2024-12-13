@@ -69,7 +69,7 @@ Microtone::Microtone(float f,
                       string shortDescriptionText,
                       Space space,
                       float period) {
-    jassert(! isnan(f));
+    jassert(! std::isnan(f));
     jassert((space == Space::LogPeriod && f >= 0.f) || (space == Space::Linear && f > 0.f));
     jassert(period >= TuningConstants::minPeriod);
     jassert(period <= TuningConstants::maxPeriod);
@@ -214,8 +214,8 @@ float Microtone::getPitchValue01() {
                 retVal = fmodf(retVal, 1.f);
 
                 // Assert that the pitch value is a valid number
-                jassert(!isnan(retVal));
-                jassert(!isinf(retVal));
+                jassert(!std::isnan(retVal));
+                jassert(!std::isinf(retVal));
 
                 return retVal;
             }
@@ -498,8 +498,8 @@ void Microtone::octaveReduce(float period) {
         }
 
         // Assert that the float value of the microtone rational is valid
-        jassert(!isnan(_microtoneRational.floatValue()));
-        jassert(!isinf(_microtoneRational.floatValue()));
+        jassert(!std::isnan(_microtoneRational.floatValue()));
+        jassert(!std::isinf(_microtoneRational.floatValue()));
         auto one = Fraction(1, 1);
         auto period_r = Fraction(static_cast<unsigned long>(_period), 1); // the fmodf above says this is an int
         
@@ -531,8 +531,8 @@ void Microtone::octaveReduce(float period) {
         }
 
         // Assert that the microtone number is valid
-        jassert(!isnan(_microtoneNumber));
-        jassert(!isinf(_microtoneNumber));
+        jassert(!std::isnan(_microtoneNumber));
+        jassert(!std::isinf(_microtoneNumber));
         
         // Perform an octave reduction based on the space of the Microtone object
         if(_space == Space::Linear) {
@@ -569,8 +569,8 @@ bool Microtone::frequencyValueIsPowerOf2() {
     jassert(_space == Space::Linear || _space == Space::LogPeriod);
     auto p = getFrequencyValue();
     jassert(p > 0.f);
-    jassert(!isnan(p));
-    jassert(!isinf(p));
+    jassert(!std::isnan(p));
+    jassert(!std::isinf(p));
     p = log2f(p);
     p = fmodf(p, 1.f);
     return(p == 0.f || p == 1.f);

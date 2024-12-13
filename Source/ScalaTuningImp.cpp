@@ -243,8 +243,8 @@ float ScalaTuningImp::getFrequencyMiddleC() {
 
 void ScalaTuningImp::setFrequencyMiddleC(float f) {
     jassert(f > 0.f);
-    jassert(! isnan(f));
-    jassert(! isinf(f));
+    jassert(! std::isnan(f));
+    jassert(! std::isinf(f));
     
     if(f < _frequencyMiddleCMin || f > _frequencyMiddleCMax) {
         DBG("ScalaTuningImp::setFrequencyMiddleC: NOP because f is out of range: " + String(f));
@@ -333,8 +333,8 @@ float ScalaTuningImp::getOctave() {
 
 void ScalaTuningImp::setOctave(float o) {
     jassert(o > 0.f);
-    jassert(!isnan(o));
-    jassert(!isinf(o));
+    jassert(!std::isnan(o));
+    jassert(!std::isinf(o));
     if(WilsonicMath::floatsAreNotEqual(_octave, o) && (o >= _octaveMin) && (o <= _octaveMax)) {
         _octave = o;
         _update();
@@ -660,7 +660,7 @@ void ScalaTuningImp::setMicrotoneArrayFromHarmonics(vector<float> harmonics) {
     const ScopedLock sl(_lock);
     _microtoneArray.removeAllMicrotones();
     for(auto f : harmonics) {
-        if(f > 0.f && !isnan(f)) {
+        if(f > 0.f && !std::isnan(f)) {
             _microtoneArray.addMicrotone(make_shared<Microtone>(f));
         }
     }

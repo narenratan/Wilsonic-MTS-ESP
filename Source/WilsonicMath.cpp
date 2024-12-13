@@ -11,12 +11,12 @@
 #include "WilsonicMath.h"
 
 float WilsonicMath::smoothstep(float edge0, float edge1, float x) {
-    jassert(!isnan(edge0));
-    jassert(!isnan(edge1));
-    jassert(!isnan(x));
-    jassert(!isinf(edge0));
-    jassert(!isinf(edge1));
-    jassert(!isinf(x));
+    jassert(!std::isnan(edge0));
+    jassert(!std::isnan(edge1));
+    jassert(!std::isnan(x));
+    jassert(!std::isinf(edge0));
+    jassert(!std::isinf(edge1));
+    jassert(!std::isinf(x));
     
     // same = return edge0
     if(floatsAreEqual(edge0, edge1, Epsilon::CALC)) {
@@ -31,12 +31,12 @@ float WilsonicMath::smoothstep(float edge0, float edge1, float x) {
 
 float WilsonicMath::linearInterp(float valA, float valB, float fract)
 {
-    jassert(!isnan(valA));
-    jassert(!isnan(valB));
-    jassert(!isnan(fract));
-    jassert(!isinf(valA));
-    jassert(!isinf(valB));
-    jassert(!isinf(fract));
+    jassert(!std::isnan(valA));
+    jassert(!std::isnan(valB));
+    jassert(!std::isnan(fract));
+    jassert(!std::isinf(valA));
+    jassert(!std::isinf(valB));
+    jassert(!std::isinf(fract));
     float const fract01 = jlimit(0.f, 1.f, fract);
 
     return valA + ((valB - valA) * fract01);

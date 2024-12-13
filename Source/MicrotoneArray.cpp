@@ -83,8 +83,8 @@ MicrotoneArray::MicrotoneArray(vector<Microtone_p> a) {
 MicrotoneArray::MicrotoneArray(vector<float> harmonics) {
     for(auto f : harmonics) {
         jassert(f > 0.f);
-        jassert(!isnan(f));
-        jassert(!isinf(f));
+        jassert(!std::isnan(f));
+        jassert(!std::isinf(f));
         auto mf = make_shared<Microtone>(f);
         _array.push_back(mf);
     }
@@ -119,8 +119,8 @@ MicrotoneArray MicrotoneArray::microtoneArrayFromArrayOfFloats(vector<float> inp
     auto ma = MicrotoneArray();
     for(auto f : inputArray) {
         jassert(f > 0.f);
-        jassert(!isnan(f));
-        jassert(!isinf(f));
+        jassert(!std::isnan(f));
+        jassert(!std::isinf(f));
         auto mt = make_shared<Microtone>(f);
         ma.addMicrotone(mt);
     }

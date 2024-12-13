@@ -74,8 +74,8 @@ String Brun::scalaComments() {
 // Function to reduce a pitch value to the range [0, 1)
 float Brun::_octaveReduceP01(float p) {
     // Ensure the input is not NaN nor infinity
-    jassert(!isnan(p));
-    jassert(!isinf(p));
+    jassert(!std::isnan(p));
+    jassert(!std::isinf(p));
 
     // If the pitch is greater than 1, subtract 1 until it is less than 1
     while (p > 1.f)

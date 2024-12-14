@@ -1,0 +1,61 @@
+name: build
+run-name: build
+on: [push]
+jobs:
+  build:
+    name: build ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-20.04
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Build
+        run: |
+            # Install JUCE Linux dependencies
+            sudo apt update
+            sudo apt install libasound2-dev libjack-jackd2-dev \
+                ladspa-sdk \
+                libcurl4-openssl-dev  \
+                libfreetype-dev libfontconfig1-dev \
+                libx11-dev libxcomposite-dev libxcursor-dev libxext-dev libxinerama-dev libxrandr-dev libxrender-dev \
+                libwebkit2gtk-4.0-dev \
+                libglu1-mesa-dev mesa-common-dev
+
+            # Use clang as the compiler
+            sudo apt install clang
+            export CXX=clang++
+            export CC=clang
+
+            # Build Projucer
+            git clone --depth=1 -b 8.0.4 https://github.com/juce-framework/JUCE.git ~/JUCE
+            cd ~/JUCE/extras/Projucer/Builds/LinuxMakefile/
+            make -j4
+            cd -
+
+            # Build Wilsonic
+            ~/JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave Wilsonic.jucer
+            cd Builds/LinuxMakefile
+            make -j4 CONFIG=Release
+            cd -
+            mkdir upload
+            cp -r Builds/LinuxMakefile/build/Wilsonic.vst3 upload
+            cp Builds/LinuxMakefile/build/Wilsonic upload
+
+            # Build WilsonicController
+            rm -r Builds
+            ~/JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave WilsonicController.jucer
+            cd Builds/LinuxMakefile
+            make -j4 CONFIG=Release
+            cd -
+            cp -r Builds/LinuxMakefile/build/WilsonicController.vst3 upload
+            cp Builds/LinuxMakefile/build/WilsonicController upload
+
+
+      - uses: actions/upload-artifact@v4
+        with:
+            name: Wilsonic_${{ matrix.os }}_${{ github.sha }}
+            path: upload

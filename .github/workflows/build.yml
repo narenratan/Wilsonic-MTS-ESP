@@ -31,7 +31,7 @@ jobs:
             export CC=clang
 
             # Build Projucer
-            git clone --depth=1 -b 8.0.4 https://github.com/juce-framework/JUCE.git ~/JUCE
+            git clone --depth=1 -b 7.0.11 https://github.com/juce-framework/JUCE.git ~/JUCE
             cd ~/JUCE/extras/Projucer/Builds/LinuxMakefile/
             make -j4
             cd -

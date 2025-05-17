@@ -198,7 +198,7 @@ ScalaFileScl::ScalaFileScl(String in_input)
                 denominator = stoull(match.str(2));
                 add_degree (*new ScalaFileDegree(numerator, denominator));
             }
-            else if(regex_match(entry, regex ("[0-9]*[\\n|\\r]*") ))
+            else if(regex_match(entry, regex ("^[0-9]+[\\r\\n]*$")))
             {
                 // According to the standard, single numbers should be treated as ratios
                 numerator = stoull(entry);

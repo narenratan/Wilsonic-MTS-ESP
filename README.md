@@ -55,6 +55,15 @@ Wilsonic MTS-ESP is an advanced audio plugin and standalone application for crea
 
 5. The built standalone application and plugins will be in the "Builds" directory.
 
+## Running Tests
+
+Compile and execute the unit tests with:
+
+```bash
+make -C tests
+./tests/test_wilsonicmath
+```
+
 ## Usage
 
 Refer to the [User Manual](https://drive.google.com/file/d/1BrTWlS9N4a0xTRUzwLxwr5R5JJ2RvF8n) for detailed instructions on how to use Wilsonic.

@@ -346,3 +346,4 @@ symbolicate_crash.py
 symbolicate.command
 windows_installer_64.iss
 Wilsonic-MTS-ESP_installer/
+tests/test_wilsonicmath
